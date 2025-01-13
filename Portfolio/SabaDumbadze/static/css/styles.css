@@ -320,19 +320,19 @@ a, button, [role="button"] {
 #sd4 {
     grid-row: 7;
     grid-column: 2;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #sd5 {
     grid-row: 7;
     grid-column: 4;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #sd6 {
     grid-row: 7;
     grid-column: 6;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .strength-div-icon {
@@ -358,7 +358,7 @@ a, button, [role="button"] {
     margin-left: 20px;
     margin-top: 5px;
     margin-right: 10px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .strength-div-description {
