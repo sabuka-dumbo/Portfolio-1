@@ -183,11 +183,17 @@
     margin-bottom: 10px;
     font-size: 40px;
     font-family: "Itim";
-    overflow: hidden;
-    display: inline-block; /* Keeps the text on one line initially */
-    border-right: 3px solid black;
+    overflow: hidden; /* Hide overflow while typing */
+    white-space: nowrap; /* Start with no wrap */
+    border-right: 3px solid black; /* Simulate cursor */
     animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite 4s;
 }
+
+/* Allow wrapping after animation finishes */
+.info-title.finished {
+    white-space: normal;
+}
+
 .info-description {
     position: relative;
     top: 0;
