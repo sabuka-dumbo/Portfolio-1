@@ -46,5 +46,9 @@ const typing_text1 = document.getElementById("typing-text1");
 const typing_text2 = document.getElementById("typing-text2");
 
 addEventListener("DOMContentLoaded", function() {
-    typing_text1.style.animation = "typing_animation 4s steps(40) 1s 1 normal both";
+    typing_text1.style.animation = "typing_animation 2s steps(30) 01s 1 normal both";
+    
+    typing_text1.addEventListener("animationend", function() {
+        typing_text2.style.animation = "typing_animation 2s steps(30) 1s 1 normal both";
+    })
 })

@@ -223,12 +223,12 @@
 }
 
 @keyframes typing_animation {
-    from {
+    0% {
         width: 0%;
     }
 
-    to {
-        width: max-content;
+    100% {
+        width: 100%;
     }
 }
 
