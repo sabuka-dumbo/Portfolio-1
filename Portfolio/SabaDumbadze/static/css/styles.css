@@ -174,11 +174,10 @@
     left: 0;
     width: max-content;
     height: max-content;
-    text-align: center;
     padding: 0;
     margin: 0;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 40px;
@@ -186,6 +185,7 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid black;
+    text-align: center;
 }
 
 .info-description {
@@ -217,7 +217,7 @@
     padding-left: 20px;
     padding-right: 20px;
     outline: none;
-    border: 3px solid black;
+    border: 5px solid black;
     background-color: #FFEF63;
     box-sizing: border-box;
 }

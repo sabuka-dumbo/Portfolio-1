@@ -55,7 +55,7 @@ addEventListener("DOMContentLoaded", function() {
         typing_text2.style.animation = "typing_animation 2s steps(30) 1s 1 normal both";
 
         typing_text2.addEventListener("animationend", function() {
-            typing_text2.style.animation = "blink_animation 0.75s step-end infinite 4s";
+            typing_text2.style.animation = "blink_animation 1s step-end infinite 1s";
         })
     }, 2000)
 })
