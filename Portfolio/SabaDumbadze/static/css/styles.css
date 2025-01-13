@@ -245,6 +245,16 @@ a, button, [role="button"] {
     padding-bottom: 50px;
 }
 
+.strengths-innerdiv {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .strengths-title {
     position: relative;
     top: 0;
