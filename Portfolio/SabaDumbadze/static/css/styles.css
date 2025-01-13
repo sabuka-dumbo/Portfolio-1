@@ -1,5 +1,6 @@
 .body {
     background-color: #FFFFFF;
+    cursor: url("{% static 'srcs/cursor.svg' %}"), auto; 
 }
 
 .custom-cursor {
