@@ -40,11 +40,11 @@
     height: 50px;
     padding: 0;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .navbar-title {
@@ -101,11 +101,11 @@
 }
 
 #navbar-nav5:hover .navbar-nav5-back {
-    animation: ease 0.3s navbar5_animation;
+    animation: ease 0.3s navbar5_animation_hover;
     background-color: #cdc04d;
 }
 
-@keyframes navbar5_animation {
+@keyframes navbar5_animation_hover {
     0% {
         background-color: #FFEF63;
     }
