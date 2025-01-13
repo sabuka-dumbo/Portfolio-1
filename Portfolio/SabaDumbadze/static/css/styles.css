@@ -244,6 +244,7 @@ a, button, [role="button"] {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-right: 10%;
+    padding-left: 10%;
 }
 
 .strengths-title {
