@@ -171,7 +171,8 @@
 .info-title {
     position: relative;
     top: 0;
-    left: 0;
+    left: -50%;
+    transform: translateX(50%);
     width: max-content;
     height: max-content;
     padding: 0;
