@@ -160,12 +160,15 @@
     position: relative;
     top: -10%;
     left: 0;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 450px;
     grid-row: 1;
     grid-column: 3;
     display: inline-grid;
     background-color: #39361c;
+    object-fit:cover;
 }
 
 .info-title {
@@ -225,7 +228,7 @@
 
 @keyframes blink_animation {
     0% {
-        border-right: none;
+        border-right: 3px solid white;
     }
 
     50% {
@@ -233,7 +236,7 @@
     }
 
     100% {
-        border-right: none;
+        border-right: 3px solid white;
     }
 }
 
