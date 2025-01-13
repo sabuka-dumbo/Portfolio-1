@@ -44,9 +44,16 @@ info_button.addEventListener("mouseleave", function() {
 
 window.onload = () => {
     const typingText = document.getElementById('typing-text');
-    if (typingText.offsetWidth > container.offsetWidth) {
-        typingText.addEventListener("", () => {
-            typingText.classList.add('finished');
-        });
+    const container = typingText.parentElement; // Assuming parent is the container
+
+    // Check if the text overflows the container
+    function checkOverflow() {
+        if (typingText.offsetWidth > container.offsetWidth) {
+            console.log("Text has overflowed the container.");
+            typingText.classList.add('finished'); // Add the 'finished' class
+        }
     }
+
+    // Periodically check for overflow while typing animation is running
+    setInterval(checkOverflow, 100); // Check every 100ms
 };
