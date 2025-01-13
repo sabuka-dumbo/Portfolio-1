@@ -105,6 +105,15 @@
     background-color: #cdc04d;
 }
 
+.navbar-nav-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 10px;
+    background-color: aqua;
+}
+
 @keyframes navbar5_animation_hover {
     0% {
         background-color: #FFEF63;
