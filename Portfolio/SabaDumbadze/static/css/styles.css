@@ -3,6 +3,10 @@
     cursor: url('/static/srcs/cursor.svg'), auto;
 }
 
+a, button, [role="button"] {
+    cursor: url("/static/srcs/cursor2.svg"), pointer;
+}
+
 .smaller-font {
     font-size: 10px;
     font-weight: lighter;
@@ -224,7 +228,6 @@
     border: 5px solid black;
     background-color: #FFEF63;
     box-sizing: border-box;
-    cursor: pointer;
 }
 
 @keyframes blink_animation {
