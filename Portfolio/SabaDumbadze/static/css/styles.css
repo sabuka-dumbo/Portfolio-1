@@ -218,6 +218,35 @@
     background-color: #FFEF63;
 }
 
+.info-button:hover {
+    animation: ease 1s info_button_hover;
+    box-shadow: 8px 8px black;
+    border: none;
+}
+
+@keyframes info_button_hover {
+    0% {
+    }
+
+    100% {
+        border: none;
+        box-shadow: 8px 8px black;
+    }
+}
+
+@keyframes info_button_unhover {
+    0% {
+        border: 5px solid black;
+        border: none;
+        box-shadow: 8px 8px black;
+    }
+
+    100% {
+        border: 5px solid black;
+        box-shadow: none;
+    }
+}
+
 @keyframes navbar1_animation_hover {
     0% {
         background-color: #F68368;
