@@ -307,6 +307,10 @@ a, button, [role="button"] {
     grid-column: 2;
 }
 
+#sd1:hover {
+    animation: card_hover_animation 1s ease;
+}
+
 #sd2 {
     grid-row: 5;
     grid-column: 4;
@@ -373,6 +377,14 @@ a, button, [role="button"] {
     margin-right: 20px;
     font-weight: normal;
     margin-bottom: 10px;
+}
+
+@keyframes card_hover_animation {
+    0% {}
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes blink_animation {
