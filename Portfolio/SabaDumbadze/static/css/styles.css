@@ -140,6 +140,8 @@
     height: max-content;
     display: grid;
     grid-template-columns: 55% 5% 40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .info-part1 {
@@ -155,14 +157,14 @@
 
 .info-img {
     position: relative;
-    top: 0;
+    top: -10%;
     left: 0;
     width: 100%;
-    height: max-content;
+    height: 140%;
     grid-row: 1;
     grid-column: 3;
     display: inline-grid;
-    background-color: #FFEF63;
+    background-color: #39361c;
 }
 
 .info-title {
