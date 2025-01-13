@@ -185,10 +185,6 @@
     font-family: "Itim";
 }
 
-.info-title.finished {
-    white-space: normal;
-}
-
 .info-description {
     position: relative;
     top: 0;
