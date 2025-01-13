@@ -240,7 +240,7 @@ a, button, [role="button"] {
     width: 100%;
     height: max-content;
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 10% calc((80% - 45px) / 3) 10px calc((80% - 45px) / 3) 10px calc((80% - 45px) / 3) 10% 35px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
