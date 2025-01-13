@@ -183,6 +183,7 @@
     margin-bottom: 10px;
     font-size: 40px;
     font-family: "Itim";
+    border-right: 1ps solid;
 }
 
 .info-description {
