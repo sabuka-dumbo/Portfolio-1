@@ -41,16 +41,3 @@ info_button.addEventListener("mouseleave", function() {
         })
     }
 })
-
-window.onload = () => {
-    const typingText = document.getElementById('typing-text');
-    const container = typingText.parentElement;
-
-    function checkOverflow() {
-        if (typingText.offsetWidth > container.offsetWidth) {
-            typingText.classList.add('finished');
-        }
-    }
-
-    setInterval(checkOverflow, 100); 
-};

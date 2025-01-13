@@ -183,10 +183,6 @@
     margin-bottom: 10px;
     font-size: 40px;
     font-family: "Itim";
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid black;
-    animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite 4s;
 }
 
 .info-title.finished {
@@ -225,27 +221,6 @@
     border: 5px solid black;
     background-color: #FFEF63;
     box-sizing: border-box;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 80%;
-    }
-}
-
-@keyframes blink {
-    0% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: black;
-    }
-    100% {
-        border-color: transparent;
-    }
 }
 
 @keyframes info_button_hover {
