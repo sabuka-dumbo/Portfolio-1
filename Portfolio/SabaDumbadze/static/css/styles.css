@@ -243,8 +243,6 @@ a, button, [role="button"] {
     grid-template-columns: 23% 5% 23% 5% 23% 11% 10%;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-right: 10%;
-    padding-left: 10%;
 }
 
 .strengths-title {
