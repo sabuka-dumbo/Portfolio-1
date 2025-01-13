@@ -237,10 +237,10 @@ a, button, [role="button"] {
     position: relative;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
     height: max-content;
     display: grid;
-    grid-template-columns: 23% 5% 23% 5% 23% 11% 10%;
+    grid-template-columns: 10% 23% 5% 23% 5% 23% 10% 10%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
