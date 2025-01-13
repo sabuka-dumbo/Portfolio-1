@@ -79,15 +79,21 @@
     margin: 0;
     margin-left: 25px;
     z-index: 6;
+    cursor: pointer;
+}
+
+.navbar-nav5 {
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-nav5-back {
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -40%);
     width: 140%;
-    height: 60%;
+    height: 150%;
     background-color: #FFEF63;
     z-index: -1;
     border-bottom-left-radius: 35px;
@@ -95,5 +101,16 @@
 }
 
 #navbar-nav5:hover .navbar-nav5-back {
-    background-color: aqua;
+    animation: ease 0.3s navbar5_animation;
+    background-color: #cdc04d;
+}
+
+@keyframes navbar5_animation {
+    0% {
+        background-color: #FFEF63;
+    }
+
+    100% {
+        background-color: #cdc04d;
+    }
 }
