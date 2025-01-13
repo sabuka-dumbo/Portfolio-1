@@ -184,6 +184,7 @@
     font-size: 40px;
     font-family: "Itim";
     animation: typing 3s steps(22) forwards;
+    animation: blink 3s steps(22) forwards;
     white-space: nowrap;
     border-right: 1px solid;
     overflow: hidden;
@@ -231,6 +232,12 @@
 
     to {
         width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
 }
 
