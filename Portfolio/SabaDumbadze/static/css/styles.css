@@ -171,14 +171,12 @@
 .info-title {
     position: relative;
     top: 0;
-    left: -50%;
-    transform: translateX(50%);
-    width: max-content;
+    left: 50%; /* Move the element's left edge to the center of its container */
+    transform: translateX(-50%); /* Offset the element by half its width to center it */
+    width: max-content; /* Ensure the width adjusts to the content */
     height: max-content;
     padding: 0;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 40px;
@@ -188,6 +186,7 @@
     border-right: 3px solid black;
     text-align: center;
 }
+
 
 .info-description {
     position: relative;
