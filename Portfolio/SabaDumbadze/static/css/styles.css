@@ -7,6 +7,11 @@ a, button, [role="button"] {
     cursor: url("/static/srcs/cursor2.svg"), pointer;
 }
 
+::selection {
+    background-color: rgba(255, 255, 0, 0.25);
+    color: black;
+  }
+
 .smaller-font {
     font-size: 10px;
     font-weight: lighter;
