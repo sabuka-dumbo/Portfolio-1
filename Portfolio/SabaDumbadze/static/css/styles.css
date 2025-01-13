@@ -254,6 +254,7 @@ a, button, [role="button"] {
     display: inline-grid;
     grid-row: 1;
     grid-column: 1;
+    font-weight: bold;
 }
 
 .strengths-small-title {
@@ -266,6 +267,7 @@ a, button, [role="button"] {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 3;
+    font-weight: normal;
 }
 
 @keyframes blink_animation {
