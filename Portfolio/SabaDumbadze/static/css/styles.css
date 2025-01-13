@@ -80,9 +80,10 @@
     margin-left: 25px;
     z-index: 6;
     cursor: pointer;
+    background-color: antiquewhite;
 }
 
-.navbar-nav5 {
+.navbar-nav2 {
     padding: 0;
     margin: 0;
 }
