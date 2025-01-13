@@ -42,9 +42,9 @@ info_button.addEventListener("mouseleave", function() {
     }
 })
 
-const typing_text1 = document.getElementById("typing_text1");
-const typing_text2 = document.getElementById("typing_text2");
+const typing_text1 = document.getElementById("typing-text1");
+const typing_text2 = document.getElementById("typing-text2");
 
 addEventListener("DOMContentLoaded", function() {
-    typing_text1.style.animation = "typing_animation ease step(25)";
+    typing_text1.style.animation = "typing_animation 4s steps(40) 1s 1 normal both";
 })
