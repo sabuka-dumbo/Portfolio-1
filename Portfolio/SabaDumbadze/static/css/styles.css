@@ -243,6 +243,8 @@ a, button, [role="button"] {
     grid-template-columns: 23% 5% 23% 5% 23% 11% 10%;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .strengths-title {
@@ -255,6 +257,8 @@ a, button, [role="button"] {
     grid-row: 1;
     grid-column: 1;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 .strengths-small-title {
@@ -268,6 +272,23 @@ a, button, [role="button"] {
     grid-column-start: 1;
     grid-column-end: 3;
     font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.strengths-line {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    display: inline-grid;
+    grid-row: 3;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 8px;
 }
 
 @keyframes blink_animation {
