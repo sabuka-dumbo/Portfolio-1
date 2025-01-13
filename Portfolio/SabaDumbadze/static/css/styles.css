@@ -74,10 +74,19 @@
     right: 0;
     width: max-content;
     height: max-content;
-    background-color: aqua;
     display: inline-block;
     padding: 0;
     margin: 0;
     margin-left: 15px;
-    border-bottom: 2px black solid;
+    z-index: 6;
+}
+
+.navbar-nav5-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFEF63;
+    z-index: 10;
 }
