@@ -44,7 +44,9 @@ info_button.addEventListener("mouseleave", function() {
 
 window.onload = () => {
     const typingText = document.getElementById('typing-text');
-    typingText.addEventListener("", () => {
-        typingText.classList.add('finished');
-    });
+    if (typingText.offsetWidth > container.offsetWidth) {
+        typingText.addEventListener("", () => {
+            typingText.classList.add('finished');
+        });
+    }
 };
