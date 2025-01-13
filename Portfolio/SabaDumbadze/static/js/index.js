@@ -47,8 +47,11 @@ const typing_text2 = document.getElementById("typing-text2");
 
 addEventListener("DOMContentLoaded", function() {
     typing_text1.style.animation = "typing_animation 2s steps(30) 01s 1 normal both";
+    typing_text2.style.opacity = '0';
     
-    typing_text1.addEventListener("animationend", function() {
+    this.setTimeout(function() {
+        typing_text1.style.borderRight = 'none';
+        typing_text2.style.opacity = '1';
         typing_text2.style.animation = "typing_animation 2s steps(30) 1s 1 normal both";
-    })
+    }, 2000)
 })
