@@ -534,6 +534,14 @@ a, button, [role="button"] {
     border: 3px solid black;
 }
 
+.rights {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+}
+
 @keyframes card_hover_animation_close {
     0% {
         transform: scale(1.02);
