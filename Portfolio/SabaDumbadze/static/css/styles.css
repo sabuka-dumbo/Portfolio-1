@@ -219,17 +219,16 @@
 }
 
 .info-button:hover {
-    animation: ease 1s info_button_hover;
-    box-shadow: 8px 8px black;
-    border: none;
+    animation: ease 0.5s info_button_hover;
 }
 
 @keyframes info_button_hover {
     0% {
+        border: 5px solid black;
     }
 
     100% {
-        border: none;
+        border: 0px solid black;
         box-shadow: 8px 8px black;
     }
 }
