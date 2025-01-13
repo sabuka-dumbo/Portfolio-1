@@ -185,6 +185,7 @@
     font-family: "Itim";
     animation: typing 3s steps(22) forwards;
     white-space: nowrap;
+    border-right: 1px solid;
     overflow: hidden;
     text-align: center;
 }
