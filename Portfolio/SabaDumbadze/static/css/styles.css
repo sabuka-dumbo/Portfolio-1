@@ -184,12 +184,10 @@
     font-size: 40px;
     font-family: "Itim";
     overflow: hidden;
-    white-space: nowrap;
-    overflow-wrap: break-word;
+    display: inline-block; /* Keeps the text on one line initially */
     border-right: 3px solid black;
     animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite 4s;
 }
-
 .info-description {
     position: relative;
     top: 0;
