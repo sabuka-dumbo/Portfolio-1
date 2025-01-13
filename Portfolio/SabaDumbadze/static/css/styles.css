@@ -233,6 +233,18 @@ a, button, [role="button"] {
     box-sizing: border-box;
 }
 
+.strengths-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 55% 5% 40%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 @keyframes blink_animation {
     0% {
         border-right: 3px solid white;
