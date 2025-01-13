@@ -222,6 +222,20 @@
     box-sizing: border-box;
 }
 
+@keyframes blink_animation {
+    0% {
+        border-right: none;
+    }
+
+    50% {
+        border-right: 5px solid black;
+    }
+
+    100% {
+        border-right: none;
+    }
+}
+
 @keyframes typing_animation {
     0% {
         width: 0%;
