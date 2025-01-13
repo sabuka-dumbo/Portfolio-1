@@ -172,7 +172,7 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: max-content;
     height: max-content;
     text-align: center;
     padding: 0;
@@ -184,6 +184,9 @@
     font-size: 40px;
     font-family: "Itim";
     animation: typing 3s steps(22) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
 }
 
 .info-description {
