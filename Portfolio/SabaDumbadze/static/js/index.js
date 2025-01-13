@@ -59,3 +59,135 @@ addEventListener("DOMContentLoaded", function() {
         })
     }, 2500)
 })
+
+document.getElementById("sd1").addEventListener("mouseenter", function() {
+    const current_card = document.getElementById("sd1");
+    current_card.style.animation = "card_hover_animation_open ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = "scale(1.02)";
+        current_card.style.boxShadow = "0px 0px 25px gray";
+    })
+})
+
+document.getElementById("sd1").addEventListener("mouseleave", function() {
+    const current_card = document.getElementById("sd1");
+    current_card.style.animation = "card_hover_animation_close ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = '';
+        current_card.style.boxShadow = '';
+    })
+})
+
+document.getElementById("sd2").addEventListener("mouseenter", function() {
+    const current_card = document.getElementById("sd2");
+    current_card.style.animation = "card_hover_animation_open ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = "scale(1.02)";
+        current_card.style.boxShadow = "0px 0px 25px gray";
+    })
+})
+
+document.getElementById("sd2").addEventListener("mouseleave", function() {
+    const current_card = document.getElementById("sd2");
+    current_card.style.animation = "card_hover_animation_close ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = '';
+        current_card.style.boxShadow = '';
+    })
+})
+
+document.getElementById("sd3").addEventListener("mouseenter", function() {
+    const current_card = document.getElementById("sd3");
+    current_card.style.animation = "card_hover_animation_open ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = "scale(1.02)";
+        current_card.style.boxShadow = "0px 0px 25px gray";
+    })
+})
+
+document.getElementById("sd3").addEventListener("mouseleave", function() {
+    const current_card = document.getElementById("sd3");
+    current_card.style.animation = "card_hover_animation_close ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = '';
+        current_card.style.boxShadow = '';
+    })
+})
+
+document.getElementById("sd4").addEventListener("mouseenter", function() {
+    const current_card = document.getElementById("sd4");
+    current_card.style.animation = "card_hover_animation_open ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = "scale(1.02)";
+        current_card.style.boxShadow = "0px 0px 25px gray";
+    })
+})
+
+document.getElementById("sd4").addEventListener("mouseleave", function() {
+    const current_card = document.getElementById("sd4");
+    current_card.style.animation = "card_hover_animation_close ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = '';
+        current_card.style.boxShadow = '';
+    })
+})
+
+document.getElementById("sd5").addEventListener("mouseenter", function() {
+    const current_card = document.getElementById("sd5");
+    current_card.style.animation = "card_hover_animation_open ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = "scale(1.02)";
+        current_card.style.boxShadow = "0px 0px 25px gray";
+    })
+})
+
+document.getElementById("sd5").addEventListener("mouseleave", function() {
+    const current_card = document.getElementById("sd5");
+    current_card.style.animation = "card_hover_animation_close ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = '';
+        current_card.style.boxShadow = '';
+    })
+})
+
+document.getElementById("sd6").addEventListener("mouseenter", function() {
+    const current_card = document.getElementById("sd6");
+    current_card.style.animation = "card_hover_animation_open ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = "scale(1.02)";
+        current_card.style.boxShadow = "0px 0px 25px gray";
+    })
+})
+
+document.getElementById("sd6").addEventListener("mouseleave", function() {
+    const current_card = document.getElementById("sd6");
+    current_card.style.animation = "card_hover_animation_close ease 0.4s";
+
+    current_card.addEventListener("animationend", function() {
+        current_card.style.animation = '';
+        current_card.style.transform = '';
+        current_card.style.boxShadow = '';
+    })
+})
