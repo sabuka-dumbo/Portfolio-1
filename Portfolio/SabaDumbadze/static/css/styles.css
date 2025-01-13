@@ -219,6 +219,16 @@
     box-sizing: border-box;
 }
 
+@keyframes typing_animation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
 @keyframes info_button_hover {
     0% {
         border: 5px solid black;
