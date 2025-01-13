@@ -432,13 +432,58 @@ a, button, [role="button"] {
     text-align: left;
 }
 
-.work-div {
+.work-img {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: max-content;
+    height: 120px;
     background-color: gainsboro;
+}
+
+#wd1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#wd2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#wd3 {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+#wd4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#wd5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#wd6 {
+    grid-column: 5;
+    grid-row: 3;
+}
+
+#wd7 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#wd8 {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+#wd9 {
+    grid-column: 5;
+    grid-row: 5;
 }
 
 @keyframes card_hover_animation_close {
