@@ -438,7 +438,7 @@ a, button, [role="button"] {
     left: 0;
     width: 100%;
     height: max-content;
-
+    background-color: gainsboro;
 }
 
 @keyframes card_hover_animation_close {
