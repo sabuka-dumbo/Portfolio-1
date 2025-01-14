@@ -602,24 +602,28 @@ a, button, [role="button"] {
     #sd3 {
         grid-row: 2;
         grid-column: 2;
+        display: none;
     }
     
     #sd4 {
         grid-row: 2;
         grid-column: 2;
         margin-top: 25px;
+        display: none;
     }
     
     #sd5 {
         grid-row: 7;
         grid-column: 4;
         margin-top: 25px;
+        display: none;
     }
     
     #sd6 {
         grid-row: 7;
         grid-column: 6;
         margin-top: 25px;
+        display: none;
     }
 }
 
