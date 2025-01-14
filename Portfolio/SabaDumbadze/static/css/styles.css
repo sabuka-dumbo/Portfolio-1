@@ -584,6 +584,43 @@ a, button, [role="button"] {
         margin-right: 20px;
         margin-top: 100px;
     }
+
+    .strengths-div {
+        grid-template-columns: 35px calc((90% - 90px) / 2) 20px calc((90% - 90px) / 2) 35px;
+    }
+
+    #sd1 {
+        grid-row: 5;
+        grid-column: 2;
+    }
+    
+    #sd2 {
+        grid-row: 5;
+        grid-column: 4;
+    }
+    
+    #sd3 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    #sd4 {
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 25px;
+    }
+    
+    #sd5 {
+        grid-row: 7;
+        grid-column: 4;
+        margin-top: 25px;
+    }
+    
+    #sd6 {
+        grid-row: 7;
+        grid-column: 6;
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width: 1132px) {
