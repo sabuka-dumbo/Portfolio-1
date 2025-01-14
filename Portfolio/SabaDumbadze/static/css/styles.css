@@ -544,8 +544,14 @@ a, button, [role="button"] {
 }
 
 @media screen and (max-width: 1132px) {
+    #typing-text1 {
+        width: max-content;
+        font-size: 30px;
+    }
+
     #typing-text2 {
-        width: 100%;
+        width: max-content;
+        font-size: 30px;
     }
 }
 
