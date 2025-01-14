@@ -542,6 +542,10 @@ a, button, [role="button"] {
     text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+    
+}
+
 @keyframes card_hover_animation_close {
     0% {
         transform: scale(1.02);
