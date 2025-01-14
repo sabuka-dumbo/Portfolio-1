@@ -196,6 +196,7 @@ a, button, [role="button"] {
     white-space: nowrap;
     border-right: 3px solid black;
     text-align: center;
+    text-overflow: clip;
 }
 
 
