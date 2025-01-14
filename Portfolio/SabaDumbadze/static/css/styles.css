@@ -562,6 +562,8 @@ a, button, [role="button"] {
         height: 300px;
         margin-left: 10%;
         margin-right: 10%;
+        object-fit:cover;
+        background-color: white;
     }
     
     .info-description {
