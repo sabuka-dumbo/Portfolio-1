@@ -558,6 +558,10 @@ a, button, [role="button"] {
         display: inline-grid;
         top: 0px;
         margin-top: 20px;
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     .info-description {
@@ -566,6 +570,17 @@ a, button, [role="button"] {
     
     .info-title {
         font-size: 20px;
+    }
+
+    .working-part {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: calc(100% - 40px);
+        height: max-content;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
     }
 }
 
