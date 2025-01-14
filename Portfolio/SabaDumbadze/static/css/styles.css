@@ -542,6 +542,12 @@ a, button, [role="button"] {
     text-align: center;
 }
 
+@media screen and (max-width: 1132px) {
+    .info-title {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .work-part1 {
         grid-row: 2;
