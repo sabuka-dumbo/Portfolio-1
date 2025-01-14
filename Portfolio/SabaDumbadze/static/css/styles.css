@@ -543,8 +543,17 @@ a, button, [role="button"] {
 }
 
 @media screen and (max-width: 1200px) {
-    .work-img {
-        height: 150px;
+    .work-part1 {
+        grid-row: 2;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .work-part2 {
+        grid-row: 1;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        display: inline-grid;
     }
 }
 
