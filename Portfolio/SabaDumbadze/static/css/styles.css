@@ -543,7 +543,7 @@ a, button, [role="button"] {
 }
 
 @media screen and (max-width: 1132px) {
-    .info-title {
+    #typing-text2 {
         width: 100%;
     }
 }
