@@ -547,6 +547,7 @@ a, button, [role="button"] {
         grid-row: 2;
         grid-column-start: 2;
         grid-column-end: 5;
+        margin-top: 120px;
     }
 
     .work-part2 {
@@ -554,6 +555,10 @@ a, button, [role="button"] {
         grid-column-start: 2;
         grid-column-end: 5;
         display: inline-grid;
+    }
+
+    .work-buttons {
+        bottom: -60px;
     }
 }
 
