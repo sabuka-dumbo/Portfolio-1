@@ -543,7 +543,9 @@ a, button, [role="button"] {
 }
 
 @media screen and (max-width: 1200px) {
-    
+    .work-img {
+        height: 150px;
+    }
 }
 
 @keyframes card_hover_animation_close {
