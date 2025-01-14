@@ -543,6 +543,10 @@ a, button, [role="button"] {
     text-align: center;
 }
 
+#info-button2 {
+    display: none;
+}
+
 @media screen and (max-width: 820px) {
     .info-part1 {
         grid-column-start: 1;
@@ -586,44 +590,52 @@ a, button, [role="button"] {
     }
 
     .strengths-div {
-        grid-template-columns: 35px calc((90% - 90px) / 2) 20px calc((90% - 90px) / 2) 35px;
+        grid-template-columns: 35px calc((90% - 40px) / 2) 20px calc((90% - 40px) / 2) 10px;
     }
 
     #sd1 {
         grid-row: 5;
         grid-column: 2;
     }
-    
     #sd2 {
         grid-row: 5;
         grid-column: 4;
     }
-    
     #sd3 {
-        grid-row: 2;
-        grid-column: 2;
-        display: none;
-    }
-    
-    #sd4 {
-        grid-row: 2;
+        grid-row: 6;
         grid-column: 2;
         margin-top: 25px;
-        display: none;
     }
-    
-    #sd5 {
-        grid-row: 7;
+    #sd4 {
+        grid-row: 6;
         grid-column: 4;
         margin-top: 25px;
-        display: none;
     }
-    
+    #sd5 {
+        grid-row: 7;
+        grid-column: 2;
+        margin-top: 40px;
+    }
     #sd6 {
         grid-row: 7;
-        grid-column: 6;
-        margin-top: 25px;
+        grid-column: 4;
+        margin-top: 40px;
+    }
+
+    #info-button {
         display: none;
+    }
+
+    #info-button2 {
+        display: block;
+    }
+
+    .work-div {
+        grid-template-columns: 35px calc(100% - 700px) 10px;
+    }
+
+    .work-title {
+        background-color: #c1543c;
     }
 }
 
