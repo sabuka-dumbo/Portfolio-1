@@ -557,6 +557,15 @@ a, button, [role="button"] {
         grid-column-end: 4;
         display: inline-grid;
         top: 0px;
+        margin-top: 20px;
+    }
+    
+    .info-description {
+        font-size: 15px;
+    }
+    
+    .info-title {
+        font-size: 20px;
     }
 }
 
