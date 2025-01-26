@@ -744,9 +744,10 @@ a, button, [role="button"] {
         top: 0;
         left: 0;
         width: 40px;
-        height: 10px;
+        height: 8px;
         background-color: black;
         margin-bottom: 5px;
+        display: block;
     }
 }
 
