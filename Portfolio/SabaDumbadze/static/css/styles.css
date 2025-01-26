@@ -852,3 +852,23 @@ a, button, [role="button"] {
         top: 0%;
     }
 }
+
+@keyframes navbar_nav2_open {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+@keyframes navbar_nav2_close {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        right: -100%;
+    }
+}

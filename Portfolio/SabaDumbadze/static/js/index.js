@@ -191,3 +191,28 @@ document.getElementById("sd6").addEventListener("mouseleave", function() {
         current_card.style.boxShadow = '';
     })
 })
+
+const burger_menu_div = document.getElementById("navbar-burger");
+const navbar_navs2_div = document.getElementById("navbar-navs2");
+const burger_span1 = document.getElementById("span1");
+const burger_span2 = document.getElementById("span2");
+const burger_span3 = document.getElementById("span3");
+
+let cooldown2 = true;
+let open = false;
+
+burger_menu_div.addEventListener("click", function() {
+    if (cooldown2 == true) {
+        if (open == false) {
+            navbar_navs2_div.style.display = "block";
+            navbar_navs2_div.style.animation = "navbar_nav2_open 1s ease";
+
+            navbar_navs2_div.addEventListener("animationend", function() {
+                navbar_navs2_div.style.animation = '';
+                navbar_navs2_div.style.left = "0%";
+            })
+        } else {
+
+        }
+    }
+})
