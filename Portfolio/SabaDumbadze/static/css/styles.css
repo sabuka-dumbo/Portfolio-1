@@ -682,7 +682,14 @@ a, button, [role="button"] {
 }
 
 @media screen and (max-width: 780px) {
-    
+    .navbar-navs {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #c1543c;
+    }
 }
 
 @keyframes card_hover_animation_close {
