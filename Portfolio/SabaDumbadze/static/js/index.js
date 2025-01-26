@@ -233,7 +233,34 @@ burger_menu_div.addEventListener("click", function() {
                 open = true;
             })
         } else {
+            cooldown2 = false;
+            navbar_navs2_div.style.display = "block";
+            navbar_navs2_div.style.animation = "navbar_nav2_close 1s ease";
+            burger_span1.style.animation = "span1_close ease 1s";
+            burger_span2.style.animation = "span2_close ease 1s";
+            burger_span3.style.animation = "span3_close ease 1s";
 
+            navbar_navs2_div.addEventListener("animationend", function() {
+                navbar_navs2_div.style.animation = '';
+                navbar_navs2_div.style.left = "-100%";
+                navbar_navs2_div.style.display = '';
+
+                burger_span1.style.animation = '';
+                burger_span2.style.animation = '';
+                burger_span3.style.animation = '';
+
+                burger_span1.style.top = "0px";
+                burger_span3.style.top = "0px";
+                
+                burger_span2.style.opacity = "1";
+
+                burger_span1.style.rotate = "0deg";
+                burger_span3.style.rotate = "0deg";
+
+
+                cooldown2 = true;
+                open = false;
+            })
         }
     }
 })
