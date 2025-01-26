@@ -681,6 +681,10 @@ a, button, [role="button"] {
     
 }
 
+@media screen and (max-width: 780px) {
+    
+}
+
 @keyframes card_hover_animation_close {
     0% {
         transform: scale(1.02);
