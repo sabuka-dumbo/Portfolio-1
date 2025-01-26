@@ -204,13 +204,33 @@ let open = false;
 burger_menu_div.addEventListener("click", function() {
     if (cooldown2 == true) {
         if (open == false) {
+            cooldown2 = false;
             navbar_navs2_div.style.display = "block";
             navbar_navs2_div.style.animation = "navbar_nav2_open 1s ease";
+            burger_span1.style.animation = "span1_open ease 1s";
+            burger_span2.style.animation = "span2_open ease 1s";
+            burger_span3.style.animation = "span3_open ease 1s";
 
             navbar_navs2_div.addEventListener("animationend", function() {
                 navbar_navs2_div.style.animation = '';
                 navbar_navs2_div.style.left = "0%";
                 navbar_navs2_div.style.display = "block";
+
+                burger_span1.style.animation = '';
+                burger_span2.style.animation = '';
+                burger_span3.style.animation = '';
+
+                burger_span1.style.top = "13.5px";
+                burger_span3.style.top = "-13.5px";
+                
+                burger_span2.style.opacity = "0";
+
+                burger_span1.style.rotate = "45deg";
+                burger_span3.style.rotate = "-45deg";
+
+
+                cooldown2 = true;
+                open = true;
             })
         } else {
 

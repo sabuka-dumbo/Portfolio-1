@@ -873,3 +873,55 @@ a, button, [role="button"] {
         right: -100%;
     }
 }
+
+@keyframes span1_open {
+    0% {}
+
+    100% {
+        top: 13.5px;
+        rotate: 45deg;
+    }
+}
+
+@keyframes span2_open {
+    0% {}
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes span3_open {
+    0% {}
+
+    100% {
+        top: -13.5px;
+        rotate: -45deg;
+    }
+}
+
+@keyframes span1_close {
+    0% {}
+
+    100% {
+        top: 0px;
+        rotate: 0deg;
+    }
+}
+
+@keyframes span2_close {
+    0% {}
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes span3_close {
+    0% {}
+
+    100% {
+        top: 0px;
+        rotate: 0deg;
+    }
+}
