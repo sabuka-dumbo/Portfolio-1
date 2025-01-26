@@ -193,7 +193,7 @@ document.getElementById("sd6").addEventListener("mouseleave", function() {
 })
 
 const burger_menu_div = document.getElementById("navbar-burger");
-const navbar_navs2_div = document.getElementById("navbar-navs2");
+const navbar_navs2_div = document.getElementById("navbar-navs");
 const burger_span1 = document.getElementById("span1");
 const burger_span2 = document.getElementById("span2");
 const burger_span3 = document.getElementById("span3");

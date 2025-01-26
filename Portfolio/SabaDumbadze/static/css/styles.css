@@ -737,6 +737,7 @@ a, button, [role="button"] {
         width: max-content;
         height: max-content;
         display: block;
+        z-index: 100;
     }
 
     .navbar-span {
