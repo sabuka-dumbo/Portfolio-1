@@ -210,6 +210,7 @@ burger_menu_div.addEventListener("click", function() {
             navbar_navs2_div.addEventListener("animationend", function() {
                 navbar_navs2_div.style.animation = '';
                 navbar_navs2_div.style.left = "0%";
+                navbar_navs2_div.style.display = "block";
             })
         } else {
 
