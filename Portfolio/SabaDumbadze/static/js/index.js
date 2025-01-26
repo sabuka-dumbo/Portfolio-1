@@ -243,7 +243,6 @@ burger_menu_div.addEventListener("click", function() {
             navbar_navs2_div.addEventListener("animationend", function() {
                 navbar_navs2_div.style.animation = '';
                 navbar_navs2_div.style.left = "-100%";
-                navbar_navs2_div.style.display = '';
 
                 burger_span1.style.animation = '';
                 burger_span2.style.animation = '';
