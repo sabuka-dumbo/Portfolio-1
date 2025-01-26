@@ -733,7 +733,7 @@ a, button, [role="button"] {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 20px;
+        right: 50px;
         width: max-content;
         height: max-content;
         display: block;
