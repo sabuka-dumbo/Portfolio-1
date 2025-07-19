@@ -140,12 +140,68 @@ body {
     grid-template-columns: 50px calc((120% - 150px) / 2) 50px calc((80% - 150px) / 2) 50px;
 }
 
+.a3-imgs {
+    display: grid;
+    gap: 20px;
+    grid-column-start: 4;
+}
+
+.a3-imgs2 {
+    display: grid;
+    gap: 20px;
+    grid-column-start: 2;
+}
+
 .a3-img1 {
     position: relative;
     width: 100%;
     height: 170px;
     background-color: antiquewhite;
-    grid-column-start: 4;
+    display: inline-block;
+    border-radius: 2;
+}
+
+.a3-img2 {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 2;
+}
+
+.a3-img3 {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 2;
+}
+
+.a3-img4 {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 2;
+}
+
+.a3-img5 {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 2;
+}
+
+.a3-img6 {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background-color: antiquewhite;
     display: inline-block;
     border-radius: 2;
 }
@@ -176,4 +232,43 @@ body {
     padding: 0;
     margin: 0;
     margin-top: 80px;
+}
+
+.a3-title3 {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    grid-column-start: 4;
+    font-size: 30px;
+    font-family: "Itim";
+    font-weight: bold;
+    grid-row-start: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.a3-title4 {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    grid-column-start: 4;
+    font-size: 20px;
+    font-family: "Itim";
+    font-weight: normal;
+    grid-row-start: 1;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+}
+
+.a-part4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 50px calc((80% - 150px) / 2) 50px calc((120% - 150px) / 2) 50px;
 }
