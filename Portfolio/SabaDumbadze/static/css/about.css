@@ -1,14 +1,13 @@
-.working-part {
-}
-
 .a-part1 {
     position: relative;
     top: 0;
-    left: 0px;
+    left: calc((100vw - 100%) / 2);
     width: 100vw;
     height: 500px;
     padding: 0;
     margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .a-title1 {
