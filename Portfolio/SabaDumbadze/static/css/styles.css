@@ -3,6 +3,16 @@
     cursor: url('/static/srcs/cursor.svg'), auto;
 }
 
+* {
+    cursor: url('/static/srcs/cursor.svg'), auto !important;
+}
+
+
+body, a, button, [role="button"], * {
+    cursor: url('/static/srcs/cursor.svg'), auto;
+}
+
+
 a, button, [role="button"] {
     cursor: url("/static/srcs/cursor2.svg"), pointer;
 }
