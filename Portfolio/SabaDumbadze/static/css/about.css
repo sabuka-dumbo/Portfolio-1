@@ -4,8 +4,58 @@
     left: 0;
     width: 100%;
     height: max-content;
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Itim";
     font-weight: bold;
-    
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 150px;
+}
+
+.a-title2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    font-size: 55px;
+    font-family: "Itim";
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.a-img1 {
+    position: absolute;
+    top: 20px;
+    left: -10%;
+    width: 160px;
+    height: max-content;
+}
+
+.a-img2 {
+    position: absolute;
+    top: 200px;
+    left: 7%;
+    width: 120px;
+    height: max-content;
+}
+
+.a-img3 {
+    position: absolute;
+    top: 320px;
+    left: -8%;
+    width: 200px;
+    height: max-content;
+}
+
+.a-img4 {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 300px;
+    height: 350px;
+    background-color: antiquewhite;
 }
