@@ -43,6 +43,21 @@ body {
     margin: 0;
 }
 
+.a-button1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 150px;
+    height: 40px;
+    background-color: #47D4FF;
+    color: white;
+    font-size: 20px;
+    font-family: "Itim";
+    border: none;
+    border-radius: 25px;
+}
+
 .a-img1 {
     position: absolute;
     top: 20px;
