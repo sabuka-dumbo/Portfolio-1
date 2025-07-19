@@ -1,8 +1,12 @@
+.working-part {
+    overflow-x: hidden;
+}
+
 .a-part1 {
     position: relative;
     top: 0;
-    left: calc((100vw - 100%) / 2);
-    width: 100vw;
+    left: 0;
+    width: 100%;
     height: 500px;
     padding: 0;
     margin: 0;
