@@ -136,6 +136,7 @@ body {
     width: 100%;
     height: max-content;
     display: grid;
+    margin-top: 100px;
     grid-template-columns: 50px calc((120% - 150px) / 2) 50px calc((80% - 150px) / 2) 50px;
 }
 
@@ -150,14 +151,30 @@ body {
     border-radius: 2;
 }
 
-.a3-title {
+.a3-title1 {
     position: relative;
     top: 0;
     width: 100%;
     height: max-content;
     grid-column-start: 2;
-    display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Itim";
     font-weight: bold;
+    grid-row-start: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.a3-title2 {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    grid-column-start: 2;
+    font-size: 20px;
+    font-family: "Itim";
+    font-weight: normal;
+    grid-row-start: 1;
+    padding: 0;
+    margin: 0;
 }
