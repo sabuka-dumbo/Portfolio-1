@@ -1,20 +1,20 @@
 .body {
     background-color: #FFFFFF;
-    cursor: url('/static/srcs/cursor.svg'), auto;
+    cursor: url('/static/srcs/cursor.cur'), auto;
 }
 
 * {
-    cursor: url('/static/srcs/cursor.svg'), auto !important;
+    cursor: url('/static/srcs/cursor.cur'), auto !important;
 }
 
 
 body, a, button, [role="button"], * {
-    cursor: url('/static/srcs/cursor.svg'), auto;
+    cursor: url('/static/srcs/cursor.cur'), auto;
 }
 
 
 a, button, [role="button"] {
-    cursor: url("/static/srcs/cursor2.svg"), pointer;
+    cursor: url("/static/srcs/cursor2.cur"), pointer;
 }
 
 ::selection {
