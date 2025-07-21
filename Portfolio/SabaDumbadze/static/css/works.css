@@ -121,8 +121,9 @@
     width: 100%;
     height: max-content;
     display: grid;
-    grid-column: 49% 2% 49%;
-    grid-row: auto;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: auto;
+    row-gap: 6px;
 }
 
 .w-pic {
