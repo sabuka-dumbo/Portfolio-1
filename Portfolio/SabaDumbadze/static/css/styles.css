@@ -692,8 +692,19 @@ a, button, [role="button"] {
     }
 }
 
-@media screen and (max-width: 500px) {
-    
+@media screen and (max-width: 480px) {
+    #typing-text1 {
+        font-size: 20px;
+    }
+
+    #typing-text2 {
+        font-size: 20px;
+    }
+
+    .info-button {
+        width: 80%;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 780px) {
