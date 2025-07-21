@@ -121,7 +121,7 @@
     width: 100%;
     height: max-content;
     display: grid;
-    grid-column: 48.5% 5% 48.5%;
+    grid-column: 49% 2% 49%;
     grid-row: auto;
 }
 
@@ -149,22 +149,17 @@
     grid-row: 3;
 }
 
-.w-pic3 {
+.w-pic4 {
     grid-column: 3;
     grid-row: 3;
 }
 
-.w-pic4 {
-    grid-column: 1;
-    grid-row: 5;
-}
-
 .w-pic5 {
-    grid-column: 3;
+    grid-column: 1;
     grid-row: 5;
 }
 
 .w-pic6 {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 3;
+    grid-row: 5;
 }
