@@ -55,6 +55,7 @@
     background-color: antiquewhite;
     display: grid;
     grid-template-columns: 40% 5% 55%;
+    grid-template-rows: auto auto; 
 }
 
 .w-title1 {
@@ -87,7 +88,7 @@
     font-weight: normal;
     color: black;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     display: block;
 }
 
