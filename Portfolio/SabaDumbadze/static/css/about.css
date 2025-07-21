@@ -272,3 +272,37 @@ body {
     margin-top: 100px;
     grid-template-columns: 50px calc((80% - 150px) / 2) 50px calc((120% - 150px) / 2) 50px;
 }
+
+
+@media screen and (max-width: 750px) {
+    .a-title1 {
+        font-size: 20px;
+    }
+
+    .a-title2 {
+        font-size: 30px;
+    }
+
+    .a-img1{
+        width: 120px;
+    }
+
+    .a-img2 {
+        top: 160px;
+        width: 80px;
+    }
+
+    .a-img3 {
+        top: 270px;
+        width: 160px;
+    }
+
+    .a-button1 {
+        top: 65%;
+    }
+
+    .a-img4 {
+        top: 70px;
+        left: 80%;
+    }
+}
