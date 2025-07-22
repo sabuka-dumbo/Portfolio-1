@@ -85,11 +85,9 @@ body {
 .a-img4 {
     position: absolute;
     top: 100px;
-    left: 90%;
-    width: 300px;
+    right: -10px;
+    width: none;
     height: 350px;
-    background-color: antiquewhite;
-    rotate: -10deg;
 }
 
 .a2-wrapper {
@@ -303,7 +301,7 @@ body {
 
     .a-img4 {
         top: 70px;
-        left: 80%;
+        right: -10px;
     }
 
     .a2-wrapper {
@@ -378,5 +376,102 @@ body {
 
     .a-title1 {
         margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .a2-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    }
+
+    .a2-img1 {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10%;
+        background-color: #d9d9d9;
+    }
+
+    .a2-text {
+        max-width: 400px;
+    }
+
+    .a2-title1 {
+        font-size: 2rem;
+        font-size: 40px;
+        font-family: "Itim";
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .a2-title2 {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-size: 20px;
+        font-family: "Itim";
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 800px) {
+        .a2-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    }
+
+    .a2-img1 {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10%;
+        background-color: #d9d9d9;
+    }
+
+    .a2-text {
+        max-width: 300px;
+    }
+
+    .a2-title1 {
+        font-size: 2rem;
+        font-size: 40px;
+        font-family: "Itim";
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .a2-title2 {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-size: 20px;
+        font-family: "Itim";
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .a2-img1 {
+        display: none;
+    }
+    .a2-text {
+        width: 100%;
+        max-width: none;
+    }
+
+    .a2-title1 {
+        width: 100%;
+    }
+
+    .a2-wrapper {
+        display: inline-block;
+        width: calc(100% - 100px);
     }
 }
