@@ -324,10 +324,16 @@ body {
     }
 
     .a3-title4 {
-        margin-top: 130px;
+        margin-top: 150px;
     }
 }
 
 @media screen and (max-width: 470px) {
-    
+    .a3-imgs2 {
+        display: none;
+    }
+
+    .a3-title1 {
+        
+    }
 }
