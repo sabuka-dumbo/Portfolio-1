@@ -322,6 +322,10 @@ body {
     .a3-title2 {
         margin-top: 150px;
     }
+
+    .a3-title4 {
+        margin-top: 130px;
+    }
 }
 
 @media screen and (max-width: 470px) {
