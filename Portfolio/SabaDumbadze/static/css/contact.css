@@ -1,0 +1,42 @@
+.service-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: 30% 5% 30% 5% 30%;
+    display: grid;
+    grid-row: auto;
+    margin-top: 150px;
+}
+
+.services {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    height: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #B0A9D3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px gray;
+}
+
+.service1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.service2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.service3 {
+    grid-column: 5;
+    grid-row: 1;
+}
+
