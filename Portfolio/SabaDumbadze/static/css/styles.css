@@ -772,6 +772,20 @@ a, button, [role="button"] {
         display: block;
     }
 
+    .work-part1 {
+        display: grid;
+        grid-template-columns: 1fr; /* single column */
+        grid-auto-rows: auto; /* automatically size rows */
+        gap: 20px; /* optional spacing between images */
+        justify-items: center; /* center images horizontally */
+        padding: 20px; /* optional padding */
+    }
+
+    .work-img {
+        width: 80%; /* adjust as needed */
+        height: auto;
+    }
+
     #wd1 {
         grid-column: 1;
         grid-row: 1;
