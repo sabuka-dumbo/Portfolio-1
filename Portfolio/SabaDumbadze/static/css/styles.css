@@ -771,65 +771,6 @@ a, button, [role="button"] {
         margin-bottom: 5px;
         display: block;
     }
-
-    .work-part1 {
-        display: grid;
-        grid-template-columns: 1fr; /* single column */
-        grid-auto-rows: auto; /* automatically size rows */
-        gap: 20px; /* optional spacing between images */
-        justify-items: center; /* center images horizontally */
-        padding: 20px; /* optional padding */
-    }
-
-    .work-img {
-        width: 80%; /* adjust as needed */
-        height: auto;
-    }
-
-    #wd1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    #wd2 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    #wd3 {
-        grid-column: 1;
-        grid-row: 5;
-    }
-
-    #wd4 {
-        grid-column: 1;
-        grid-row: 7;
-    }
-
-    #wd5 {
-        grid-column: 1;
-        grid-row: 9;
-    }
-
-    #wd6 {
-        grid-column: 1;
-        grid-row: 11;
-    }
-
-    #wd7 {
-        grid-column: 1;
-        grid-row: 13;
-    }
-
-    #wd8 {
-        grid-column: 1;
-        grid-row: 15;
-    }
-
-    #wd9 {
-        grid-column: 1;
-        grid-row: 17;
-    }
 }
 
 @keyframes card_hover_animation_close {
