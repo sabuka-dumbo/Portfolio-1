@@ -8,8 +8,7 @@ form.addEventListener("submit", function (e) {
   fetch("/api/email/", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
-      "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
       name: form.name.value,

@@ -23,7 +23,7 @@ def emailapi(request):
         return JsonResponse({"status": "error", "message": "Invalid request method."}, status=405)
 
     try:
-        data = json.loads(request.body)
+        data = json.loads(request.body.decode("utf-8"))
         name = data.get("name", "").strip()
         email = data.get("email", "").strip()
         message = data.get("message", "").strip()
@@ -31,30 +31,10 @@ def emailapi(request):
         if not name or not email or not message:
             return JsonResponse({"status": "error", "message": "All fields are required."}, status=400)
 
-        Email.objects.create(name=name, email=email, message=message)
+        email_entry = Email(name=name, email=email, message=message)
+        email_entry.save()
+
         return JsonResponse({"status": "success", "message": "Message sent successfully!"})
 
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, status=500)
-    if request.method == "POST":
-        try:
-            data = json.loads(request.body.decode("utf-8"))
-
-            name = data.get("name", "")
-            email = data.get("email", "")
-            message = data.get("message", "")
-
-            if not name or not email or not message:
-                return JsonResponse({"status": "error", "message": "All fields are required."}, status=400)
-
-            Email.objects.create(
-                name=name,
-                email=email,
-                message=message
-            )
-
-            return JsonResponse({"status": "success", "message": "Message sent successfully!"})
-        except Exception as e:
-            return JsonResponse({"status": "error", "message": str(e)}, status=500)
-
-    return JsonResponse({"status": "error", "message": "Invalid request method."}, status=405)
