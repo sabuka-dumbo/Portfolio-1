@@ -23,31 +23,31 @@ msgstr "საბა დუმბაძე"
 
 #: .\SabaDumbadze\templates\index.html:18
 msgid "Web-Developer"
-msgstr ""
+msgstr "ვებ-დეველოპერი"
 
 #: .\SabaDumbadze\templates\index.html:30
 msgid "Home"
-msgstr ""
+msgstr "მთავარი"
 
 #: .\SabaDumbadze\templates\index.html:32
 msgid "About"
-msgstr ""
+msgstr "ჩემს შესახებ"
 
 #: .\SabaDumbadze\templates\index.html:33
 msgid "Works"
-msgstr ""
+msgstr "ნამუშევრები"
 
 #: .\SabaDumbadze\templates\index.html:36
 msgid "Contact"
-msgstr ""
+msgstr "კონტაქტი"
 
 #: .\SabaDumbadze\templates\index.html:45
 msgid "Hi I’m Saba Dumbadze,"
-msgstr ""
+msgstr "გამარჯობა მე საბა ვარ,"
 
 #: .\SabaDumbadze\templates\index.html:46
 msgid "an experienced Web-Developer."
-msgstr ""
+msgstr "გამოცდილი ვებ-დეველოპერი."
 
 #: .\SabaDumbadze\templates\index.html:47
 msgid ""
