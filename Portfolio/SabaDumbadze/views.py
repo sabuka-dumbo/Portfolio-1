@@ -38,3 +38,6 @@ def emailapi(request):
 
     except Exception as e:
         return JsonResponse({"status": "error", "message": str(e)}, status=500)
+    
+def choose_language(request):
+    return render(request, 'choose_language.html')
