@@ -111,10 +111,11 @@
             <div class="contact-form">
                 <h2>Send a Message</h2>
                 <form id="messageForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send</button>
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
                 </form>
                 <p class="form-status" id="formStatus"></p>
             </div>
