@@ -11,43 +11,44 @@ msgstr ""
 "POT-Creation-Date: 2025-09-28 23:44+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: Georgian <ka@li.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\SabaDumbadze\templates\index.html:7
 msgid "Saba Dumbadze"
-msgstr ""
+msgstr "საბა დუმბაძე"
 
 #: .\SabaDumbadze\templates\index.html:18
 msgid "Web-Developer"
-msgstr ""
+msgstr "ვებ-დეველოპერი"
 
 #: .\SabaDumbadze\templates\index.html:30
 msgid "Home"
-msgstr ""
+msgstr "მთავარი"
 
 #: .\SabaDumbadze\templates\index.html:32
 msgid "About"
-msgstr ""
+msgstr "ჩემს შესახებ"
 
 #: .\SabaDumbadze\templates\index.html:33
 msgid "Works"
-msgstr ""
+msgstr "სამუშაოები"
 
 #: .\SabaDumbadze\templates\index.html:36
 msgid "Contact"
-msgstr ""
+msgstr "კონტაქტი"
 
 #: .\SabaDumbadze\templates\index.html:45
 msgid "Hi I’m Saba Dumbadze,"
-msgstr ""
+msgstr "გამარჯობა, მე საბა დუმბაძე ვარ,"
 
 #: .\SabaDumbadze\templates\index.html:46
 msgid "an experienced Web-Developer."
-msgstr ""
+msgstr "გამოცდილი ვებ-დეველოპერი."
 
 #: .\SabaDumbadze\templates\index.html:47
 msgid ""
@@ -57,23 +58,28 @@ msgid ""
 "visually appealing, and user-friendly websites that help individuals and "
 "businesses stand out in the digital landscape."
 msgstr ""
+"საბა დუმბაძე არის უნარიანი და ინოვაციური ვებ-დეველოპერი, რომელიც ძლიერ "
+"საფუძველზე აქვს თანამედროვე ვებ-ტექნოლოგიებში, მათ შორის Django, CSS და "
+"JavaScript. როგორც დეველოპერი, საბა მიზნად ისახავს მაღალი ხარისხის, ვიზუალურად "
+"მზარდი და მომხმარებელზე ორიენტირებული ვებ-გვერდების შექმნას, რომლებიც ეხმარება "
+"პირებს და ბიზნესებს გამორჩეულად წარდგნენ ციფრულ სივრცეში."
 
 #: .\SabaDumbadze\templates\index.html:49
 #: .\SabaDumbadze\templates\index.html:50
 msgid "See what I can do for you"
-msgstr ""
+msgstr "ნახე რას შემიძლია შენთვის"
 
 #: .\SabaDumbadze\templates\index.html:58
 msgid "Strengths"
-msgstr ""
+msgstr "ძლიერ მხარეები"
 
 #: .\SabaDumbadze\templates\index.html:59
 msgid "Skills in web-development"
-msgstr ""
+msgstr "მოვლენა ვებ-დეველოპმენტში"
 
 #: .\SabaDumbadze\templates\index.html:64
 msgid "Git Version Control"
-msgstr ""
+msgstr "Git ვერსიის კონტროლი"
 
 #: .\SabaDumbadze\templates\index.html:65
 msgid ""
@@ -82,10 +88,13 @@ msgid ""
 "  Able to handle commits, push/pull, and simple merges with growing "
 "confidence."
 msgstr ""
+"გავცნობიერებული ვარ Git ვერსიის კონტროლი ძირითადი თანამშრომლობისთვის, "
+"ბრენჩინგისთვის და ცვლილებების მონიტორინგისთვის.  შეძლებს კომიტების, push/pull "
+"მოქმედებების და მარტივი მერჯების მართვას ზრდადი ნდობით."
 
 #: .\SabaDumbadze\templates\index.html:71
 msgid "App Design"
-msgstr ""
+msgstr "აპლიკაციის დიზაინი"
 
 #: .\SabaDumbadze\templates\index.html:72
 msgid ""
@@ -93,10 +102,14 @@ msgid ""
 "and seamless user experiences. Proficient in wireframing, prototyping, and "
 "implementing design principles to enhance functionality and aesthetics."
 msgstr ""
+გამოცდილი აპლიკაციების დიზაინში, ყურადღებას ამახვილებს ინტუიტიურ მომხმარებლის "
+"ინტერფეისებზე და გლუვ მომხმარებლის გამოცდილებაზე. გაწვრთნილია ვაირფრეიმინგში, "
+"პროტოტაიპინგში და დიზაინის პრინციპების გამოყენებაში ფუნქციონალობის და "
+"ესთეტიკის გასაუმჯობესებლად.
 
 #: .\SabaDumbadze\templates\index.html:78
 msgid "Math & Logic"
-msgstr ""
+msgstr "მათემატიკა & ლოგიკა"
 
 #: .\SabaDumbadze\templates\index.html:79
 msgid ""
@@ -104,10 +117,14 @@ msgid ""
 "problem-solving and analytical thinking. Skilled in applying mathematical "
 "concepts to optimize algorithms and develop efficient solutions."
 msgstr ""
+"ძლიერი საფუძველი მათემატიკასა და ლოგიკურ აზროვნებაში, რაც საშუალებას აძლევს "
+"ეფექტურად პრობლემების გადაჭრას და ანალიტიკურ აზროვნებას. უნარი მათემატიკური "
+"კონცეფციების გამოყენებაში ალგორითმების ოპტიმიზაციისთვის და ეფექტური გადაწყვეტილებების "
+"შექმნისთვის."
 
 #: .\SabaDumbadze\templates\index.html:84
 msgid "Web-Development"
-msgstr ""
+msgstr "ვებ-დეველოპმენტი"
 
 #: .\SabaDumbadze\templates\index.html:85
 msgid ""
@@ -115,10 +132,13 @@ msgid ""
 "friendly websites. Proficient in front-end and back-end technologies, "
 "ensuring seamless functionality and visually appealing designs."
 msgstr ""
+"გამოცდილი ვებ-დეველოპმენტში, სპეციალიზებული რეზპონსიური და მომხმარებელზე "
+"ორიენტირებული ვებ-გვერდების შექმნაში. გაწვრთნილია ფრონტენდსა და ბექენდ ტექნოლოგიებში, "
+"დაიცვას გლუვი ფუნქციონალობა და ვიზუალურად მიმზიდველი დიზაინები."
 
 #: .\SabaDumbadze\templates\index.html:90
 msgid "Post-Project Support"
-msgstr ""
+msgstr "პროექტის შემდგომი მხარდაჭერა"
 
 #: .\SabaDumbadze\templates\index.html:91
 msgid ""
@@ -126,41 +146,45 @@ msgid ""
 "completion, ensuring long-term functionality and addressing any issues "
 "promptly."
 msgstr ""
+"მოვალეობილი ვარ უწყვეტი მხარდაჭერისა და მოვლა-პატრონობის მიწოდებაზე პროექტის "
+"დასრულების შემდეგაც, რათა უზრუნველყოს გრძელვადიანი ფუნქციონირება და სწრაფად "
+"გადაწყვეტილებების მიღება."
 
 #: .\SabaDumbadze\templates\index.html:96
 msgid "Creative Thinking"
-msgstr ""
+msgstr "შემოქმედებითი აზროვნება"
 
 #: .\SabaDumbadze\templates\index.html:97
 msgid ""
 "Strong ability to think creatively and approach problems from innovative "
 "angles, developing unique solutions and enhancing project outcomes."
 msgstr ""
+"ძლიერი უნარი შემოქმედებით აზროვნებაში და პრობლემების ინოვაციური ხედვით "
+"გადაწყვეტაში, უნიკალური გადაწყვეტილებების შექმნა და პროექტის შედეგების გაუმჯობესება."
 
 #: .\SabaDumbadze\templates\index.html:115
 msgid "My Work"
-msgstr ""
+msgstr "ჩემი სამუშაოები"
 
 #: .\SabaDumbadze\templates\index.html:116
-msgid ""
-"I specialize in building clean, modern, and functional websites tailored to "
-"different needs and industries. My experience includes developing a Hotel "
-"Website with booking features, a Non-Governmental Organization (NGO) website "
-"focused on clear communication and community engagement, an Online Shop with "
-"smooth shopping and checkout flows, and a Blog platform designed for easy "
-"content creation and sharing. Each project has helped me refine my skills in "
-"creating user-friendly digital solutions that balance design and "
-"functionality."
-msgstr ""
+msgid "My Work"
+msgstr "მე სპეციალიზირებული ვარ სუფთა, თანამედროვე და ფუნქციონალური ვებ-გვერდების შექმნაში, "
+"რომელიც მორგებულია სხვადასხვა საჭიროებებსა და ინდუსტრიებზე. "
+"ჩემი გამოცდილება მოიცავს მომსახურების გვერდის შექმნას სასტუმროსთვის, "
+"არასამთავრობო ორგანიზაციის (NGO) ვებსაიტს ფოკუსით ნათელ კომუნიკაციაზე და საზოგადოებაში ჩართულობაზე, "
+"ონლაინ მაღაზიას მორგებული გლუვი შოპინგისა და ჩექაუთის ფუნქციებით, "
+"და ბლოგ პლატფორმას მარტივი კონტენტის შექმნისა და გაზიარებისთვის. "
+"თითოეული პროექტი დამეხმარა დახვეწა ჩემი უნარები მომხმარებელზე ორიენტირებული ციფრული გადაწყვეტილებების შექმნაში, "
+"რომელიც თანაბრად მოიცავს დიზაინსა და ფუნქციონალურობას."
 
 #: .\SabaDumbadze\templates\index.html:119
 msgid "See more"
-msgstr ""
+msgstr "ნახე მეტი"
 
 #: .\SabaDumbadze\templates\index.html:120
 msgid "Contact now"
-msgstr ""
+msgstr "დაგვიკავშირდი"
 
 #: .\SabaDumbadze\templates\index.html:125
 msgid "© 2025 Saba Dumbadze"
-msgstr ""
+msgstr "© 2025 საბა დუმბაძე"
