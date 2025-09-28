@@ -1,11 +1,10 @@
-{% load i18n static %}
-{% get_current_language as LANGUAGE_CODE %}
+{% load static %}
 <!DOCTYPE html>
-<html lang="{{ LANGUAGE_CODE }}">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% trans "Saba Dumbadze" %}</title>
+        <title>Saba Dumbadze</title>
 
         <!-- font link -->
         <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
@@ -16,7 +15,7 @@
     <body class="body">
         <!-- navbar -->
          <nav class="navbar" id="navbar">
-            <h1 class="navbar-title huge-font">{% trans "Web-Developer" %}</h1>
+            <h1 class="navbar-title huge-font">Web-Developer</h1>
 
             <div class="navbar-burger" id="navbar-burger">
                 <span class="navbar-span" id="span1"></span>
@@ -28,13 +27,13 @@
                 <div class="navbar-navs2" id="navbar-navs2">
                     <a href="" style="color: black;"><div class="navbar-nav" id="navbar-nav1">
                         <div class="navbar-current-line"></div>
-                        <h1 class="navbar-nav2 big-font">{% trans "Home" %}</h1>
+                        <h1 class="navbar-nav2 big-font">Home</h1>
                     </div></a>
-                    <a href="{% url 'about' %}" style="color: black;"><h1 class="navbar-nav big-font">{% trans "About" %}</h1></a>
-                    <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">{% trans "Works" %}</h1></a>
+                    <a href="{% url 'about' %}" style="color: black;"><h1 class="navbar-nav big-font">About</h1></a>
+                    <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">Works</h1></a>
                     <a href="{% url 'contact' %}" style="color: black;"><div class="navbar-nav" id="navbar-nav5">
                         <div class="navbar-nav5-back"></div>
-                        <h1 class="navbar-nav2 big-font">{% trans "Contact" %}</h1>
+                        <h1 class="navbar-nav2 big-font">Contact</h1>
                     </div></a>
                 </div>
             </div>
@@ -43,87 +42,93 @@
          <div class="working-part">
             <div class="info-div">
                 <div class="info-part1">
-                    <h1 class="info-title" id="typing-text1">{% trans "Hi I’m Saba Dumbadze," %}</h1>
-                    <h1 class="info-title" id="typing-text2">{% trans "an experienced Web-Developer." %}</h1>
-                    <h1 class="info-description medium-font">{% blocktrans %}Saba Dumbadze is a skilled and innovative web developer with a strong foundation in modern web technologies, including Django, CSS, and JavaScript. As a developer, Saba is dedicated to crafting high-quality, visually appealing, and user-friendly websites that help individuals and businesses stand out in the digital landscape.{% endblocktrans %}</h1>
-                    <a href="{% url 'about' %}">
-                        <button class="info-button medium-font" id="info-button">{% trans "See what I can do for you" %}</button>
-                        <button class="info-button medium-font" id="info-button2">{% trans "See what I can do for you" %}</button>
-                    </a>
+                    <h1 class="info-title" id="typing-text1">Hi I’m Saba Dumbadze,</h1>
+                    <h1 class="info-title" id="typing-text2">an experienced Web-Developer.</h1>
+                    <h1 class="info-description medium-font">Saba Dumbadze is a skilled and innovative web developer with a strong foundation in modern web technologies, including Django, CSS, and JavaScript. As a developer, Saba is dedicated to crafting high-quality, visually appealing, and user-friendly websites that help individuals and businesses stand out in the digital landscape.</h1>
+                    <a href="{% url 'about' %}"><button class="info-button medium-font" id="info-button">See what I can do for you</button>
+                    <button class="info-button medium-font" id="info-button2">See what I can do for you</button></a>
                 </div>
 
                 <img src="{% static 'srcs/Me.jpg' %}" class="info-img">
             </div>
 
             <div class="strengths-div">
-                <h1 class="strengths-title huge-font">{% trans "Strengths" %}</h1>
-                <h1 class="strengths-small-title medium-font">{% trans "Skills in web-development" %}</h1>
+                <h1 class="strengths-title huge-font">Strengths</h1>
+                <h1 class="strengths-small-title medium-font">Skills in web-development</h1>
                 <hr class="strengths-line">
 
                 <div class="strength-divs" id="sd1">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon1.svg' %}">
-                    <h1 class="strength-div-title medium-font">{% trans "Git Version Control" %}</h1>
-                    <h1 class="strength-div-description small-font">{% blocktrans %}Familiar with Git version control for basic collaboration, branching, and tracking changes.  
-  Able to handle commits, push/pull, and simple merges with growing confidence.{% endblocktrans %}</h1>
+                    <h1 class="strength-div-title medium-font">Git Version Control</h1>
+                    <h1 class="strength-div-description small-font">Familiar with Git version control for basic collaboration, branching, and tracking changes.  
+  Able to handle commits, push/pull, and simple merges with growing confidence.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd2">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon2.svg' %}">
-                    <h1 class="strength-div-title medium-font">{% trans "App Design" %}</h1>
-                    <h1 class="strength-div-description small-font">{% blocktrans %}Experienced in app design, focusing on creating intuitive user interfaces and seamless user experiences. Proficient in wireframing, prototyping, and implementing design principles to enhance functionality and aesthetics.{% endblocktrans %}</h1>
+                    <h1 class="strength-div-title medium-font">App Design</h1>
+                    <h1 class="strength-div-description small-font">Experienced in app design, focusing on creating intuitive user interfaces and seamless user experiences. Proficient in wireframing, prototyping, and implementing design principles to enhance functionality and aesthetics.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd3">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon3.svg' %}">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon3.svg' %}" style="position: absolute; width: 55px; height: 55px; left: -15px; top: -10px;">
-                    <h1 class="strength-div-title medium-font">{% trans "Math & Logic" %}</h1>
-                    <h1 class="strength-div-description small-font">{% blocktrans %}Strong foundation in mathematics and logical reasoning, enabling effective problem-solving and analytical thinking. Skilled in applying mathematical concepts to optimize algorithms and develop efficient solutions.{% endblocktrans %}</h1>
+                    <h1 class="strength-div-title medium-font">Math & Logic</h1>
+                    <h1 class="strength-div-description small-font">Strong foundation in mathematics and logical reasoning, enabling effective problem-solving and analytical thinking. Skilled in applying mathematical concepts to optimize algorithms and develop efficient solutions.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd4">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon4.svg' %}">
-                    <h1 class="strength-div-title medium-font">{% trans "Web-Development" %}</h1>
-                    <h1 class="strength-div-description small-font">{% blocktrans %}Experienced in web development, specializing in creating responsive and user-friendly websites. Proficient in front-end and back-end technologies, ensuring seamless functionality and visually appealing designs.{% endblocktrans %}</h1>
+                    <h1 class="strength-div-title medium-font">Web-Development</h1>
+                    <h1 class="strength-div-description small-font">Experienced in web development, specializing in creating responsive and user-friendly websites. Proficient in front-end and back-end technologies, ensuring seamless functionality and visually appealing designs.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd5">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon5.svg' %}">
-                    <h1 class="strength-div-title medium-font">{% trans "Post-Project Support" %}</h1>
-                    <h1 class="strength-div-description small-font">{% blocktrans %}Committed to providing ongoing support and maintenance even after project completion, ensuring long-term functionality and addressing any issues promptly.{% endblocktrans %}</h1>
+                    <h1 class="strength-div-title medium-font">Post-Project Support</h1>
+                    <h1 class="strength-div-description small-font">Committed to providing ongoing support and maintenance even after project completion, ensuring long-term functionality and addressing any issues promptly.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd6">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon6.svg' %}">
-                    <h1 class="strength-div-title medium-font">{% trans "Creative Thinking" %}</h1>
-                    <h1 class="strength-div-description small-font">{% blocktrans %}Strong ability to think creatively and approach problems from innovative angles, developing unique solutions and enhancing project outcomes.{% endblocktrans %}</h1>
+                    <h1 class="strength-div-title medium-font">Creative Thinking</h1>
+                    <h1 class="strength-div-description small-font">Strong ability to think creatively and approach problems from innovative angles, developing unique solutions and enhancing project outcomes.</h1>
                 </div>
             </div>
 
             <div class="work-div">
                 <div class="work-part1">
                     <img src="" class="work-img" id="wd1">
+                    
                     <img src="" class="work-img" id="wd2">
+                    
                     <img src="" class="work-img" id="wd3">
+                    
                     <img src="" class="work-img" id="wd4">
+                    
                     <img src="" class="work-img" id="wd5">
+                    
                     <img src="" class="work-img" id="wd6">
+                    
                     <img src="" class="work-img" id="wd7">
+                    
                     <img src="" class="work-img" id="wd8">
+                    
                     <img src="" class="work-img" id="wd9">
                 </div>
 
                 <div class="work-part2">
-                    <h1 class="work-title huge-font">{% trans "My Work" %}</h1>
-                    <h1 class="work-description small-font">{% blocktrans %}I specialize in building clean, modern, and functional websites tailored to different needs and industries. My experience includes developing a Hotel Website with booking features, a Non-Governmental Organization (NGO) website focused on clear communication and community engagement, an Online Shop with smooth shopping and checkout flows, and a Blog platform designed for easy content creation and sharing. Each project has helped me refine my skills in creating user-friendly digital solutions that balance design and functionality.{% endblocktrans %}</h1>
+                    <h1 class="work-title huge-font">My Work</h1>
+                    <h1 class="work-description small-font">I specialize in building clean, modern, and functional websites tailored to different needs and industries. My experience includes developing a Hotel Website with booking features, a Non-Governmental Organization (NGO) website focused on clear communication and community engagement, an Online Shop with smooth shopping and checkout flows, and a Blog platform designed for easy content creation and sharing. Each project has helped me refine my skills in creating user-friendly digital solutions that balance design and functionality.</h1>
 
                     <div class="work-buttons">
-                        <a href="{% url 'works' %}"><button class="work-button1 medium-font">{% trans "See more" %}</button></a>
-                        <a href="{% url 'contact' %}"><button class="work-button2 medium-font">{% trans "Contact now" %}</button></a>
+                        <a href="{% url 'works' %}"><button class="work-button1 medium-font">See more</button></a>
+                        <a href="{% url 'contact' %}"><button class="work-button2 medium-font">Contact now</button></a>
                     </div>
                 </div>
             </div>
 
-             <h1 class="rights small-font">{% blocktrans %}© 2025 Saba Dumbadze{% endblocktrans %}</h1>
+             <h1 class="rights small-font">© 2025 Saba Dumbadze</h1>
          </div>
 
         <script src="{% static 'js/index.js' %}"></script>
