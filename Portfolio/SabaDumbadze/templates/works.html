@@ -48,20 +48,34 @@
             </div>
 
             <div class="w-div1">
-                <h1 class="w-title1">Mini title here
+                <h1 class="w-title1">Mini title here</h1>
                 <h1 class="w-description1">Some description here</h1>
-                </h1>
 
-                <img src="" alt="" class="w-img1">
+                <div class="carousel">
+                    <div class="slides">
+                        <img src="{% static 'srcs/Me.jpg' %}" class="slide active" alt="Project Image 1">
+                        <img src="{% static 'srcs/Me.jpg' %}" class="slide" alt="Project Image 2">
+                    </div>
+                    
+                    <div class="dots">
+                    </div>
+                </div>
             </div>
 
             <div class="w-div1">
-                <h1 class="w-title1">Mini title here
+                <h1 class="w-title1">Mini title here</h1>
                 <h1 class="w-description1">Some description here</h1>
-                </h1>
 
-                <img src="" alt="" class="w-img1">
+                <div class="carousel">
+                    <div class="slides">
+                        <img src="image1.jpg" class="slide active" alt="Project Image 1">
+                        <img src="image2.jpg" class="slide" alt="Project Image 2">
+                        <img src="image3.jpg" class="slide" alt="Project Image 3">
+                    </div>
+                    <div class="dots"></div>
+                </div>
             </div>
+
 
             <div class="w-video1"></div>
 
@@ -78,6 +92,29 @@
 
             <h1 class="rights small-font" style="bottom: -50px;">© 2025 Saba Dumbadze</h1>
          </div>
+
+        <script>
+                document.querySelectorAll('.carousel').forEach(carousel => {
+                    const slides = carousel.querySelectorAll('.slide');
+                    const dotsContainer = carousel.querySelector('.dots');
+
+                    // Generate dots dynamically based on number of images
+                    slides.forEach((slide, index) => {
+                        const dot = document.createElement('span');
+                        dot.classList.add('dot');
+                        if (index === 0) dot.classList.add('active');
+                        dotsContainer.appendChild(dot);
+
+                        dot.addEventListener('click', () => {
+                            slides.forEach(s => s.classList.remove('active'));
+                            dotsContainer.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+
+                            slides[index].classList.add('active');
+                            dot.classList.add('active');
+                        });
+                    });
+                });
+        </script>
 
         <script src="{% static 'js/navbar.js' %}"></script>
     </body>
