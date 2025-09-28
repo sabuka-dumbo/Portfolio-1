@@ -1,21 +1,6 @@
 .body {
     background-color: #FFFFFF;
-    /*cursor: url('/static/srcs/cursor.cur'), auto;*/
 }
-/*
-* {
-    cursor: url('/static/srcs/cursor.cur'), auto !important;
-}
-
-
-body, a, button, [role="button"], * {
-    cursor: url('/static/srcs/cursor.cur'), auto;
-}
-
-
-a, button, [role="button"] {
-    cursor: url("/static/srcs/cursor2.cur"), pointer;
-} */
 
 ::selection {
     background-color: rgba(255, 255, 0, 0.25);
@@ -947,3 +932,19 @@ a, button, [role="button"] {
     }
 }
 
+
+@media screen and (max-width: 360px) {
+    .navbar-title {
+        font-size: 25px;
+    }
+
+    .navbar {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: calc(100% - 60px);
+    }
+
+    .navbar-burger {
+        right: 30px;
+    }
+}

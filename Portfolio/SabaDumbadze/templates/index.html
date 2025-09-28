@@ -45,11 +45,11 @@
                     <h1 class="info-title" id="typing-text1">Hi I’m Saba Dumbadze,</h1>
                     <h1 class="info-title" id="typing-text2">an experienced Web-Developer.</h1>
                     <h1 class="info-description medium-font">Saba Dumbadze is a skilled and innovative web developer with a strong foundation in modern web technologies, including Django, CSS, and JavaScript. As a developer, Saba is dedicated to crafting high-quality, visually appealing, and user-friendly websites that help individuals and businesses stand out in the digital landscape.</h1>
-                    <button class="info-button medium-font" id="info-button">See what I can do for you</button>
-                    <button class="info-button medium-font" id="info-button2">See what I can do for you</button>
+                    <a href="{% url 'about' %}"><button class="info-button medium-font" id="info-button">See what I can do for you</button>
+                    <button class="info-button medium-font" id="info-button2">See what I can do for you</button></a>
                 </div>
 
-                <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1736767600~exp=1736771200~hmac=a4944ca7d57ba5f60ecf04154fca709fc67dfdf730f2701815e13b4cc5dcfc52&w=740" class="info-img">
+                <img src="{% static 'srcs/Me.jpg' %}" class="info-img">
             </div>
 
             <div class="strengths-div">
@@ -60,7 +60,8 @@
                 <div class="strength-divs" id="sd1">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon1.svg' %}">
                     <h1 class="strength-div-title medium-font">Git Version Control</h1>
-                    <h1 class="strength-div-description small-font">Proficient in Git version control for efficient code collaboration, branch management, and tracking project changes. Skilled in resolving merge conflicts and maintaining clean commit histories.</h1>
+                    <h1 class="strength-div-description small-font">Familiar with Git version control for basic collaboration, branching, and tracking changes.  
+  Able to handle commits, push/pull, and simple merges with growing confidence.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd2">
@@ -118,12 +119,11 @@
 
                 <div class="work-part2">
                     <h1 class="work-title huge-font">My Work</h1>
-                    <h1 class="work-description small-font">I specialize in creating tailored digital solutions that cater to a variety of needs and industries. Over the years, I’ve developed a range of projects, including an Online Gradebook for efficient academic tracking, a STEM Research Assistant platform to aid collaboration and data management, and a Blog designed for seamless content creation and sharing.
-                        Additionally, I’ve worked on a Network Website similar to Facebook, focused on social interaction and community building, and a Gallery/Portfolio platform for artists to showcase their work. </h1>
+                    <h1 class="work-description small-font">I specialize in building clean, modern, and functional websites tailored to different needs and industries. My experience includes developing a Hotel Website with booking features, a Non-Governmental Organization (NGO) website focused on clear communication and community engagement, an Online Shop with smooth shopping and checkout flows, and a Blog platform designed for easy content creation and sharing. Each project has helped me refine my skills in creating user-friendly digital solutions that balance design and functionality.</h1>
 
                     <div class="work-buttons">
-                        <button class="work-button1 medium-font">See more</button>
-                        <button class="work-button2 medium-font">Contact now</button>
+                        <a href="{% url 'works' %}"><button class="work-button1 medium-font">See more</button></a>
+                        <a href="{% url 'contact' %}"><button class="work-button2 medium-font">Contact now</button></a>
                     </div>
                 </div>
             </div>

@@ -2,80 +2,126 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Saba Dumbadze</title>
-
-        <!-- font link -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Contact Me</title>
+        
+        <!-- Google Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-        <!-- css link -->
-        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}"/>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     </head>
-    <body class="body">
-        <!-- navbar -->
-         <nav class="navbar" id="navbar">
-            <h1 class="navbar-title huge-font">Web-Developer</h1>
+    <body>
+        <nav class="navbar" id="navbar">
+                <h1 class="navbar-title huge-font">Saba Dumbadze</h1>
 
-            <div class="navbar-burger" id="navbar-burger">
-                <span class="navbar-span" id="span1"></span>
-                <span class="navbar-span" id="span2"></span>
-                <span class="navbar-span" id="span3"></span>
-            </div>
-            
-            <div class="navbar-navs" id="navbar-navs">
-                <div class="navbar-navs2" id="navbar-navs2">
-                    <a href="{% url 'index' %}" style="color: black;"><h1 class="navbar-nav big-font">Home</h1></a>
-                    <a href="{% url 'about' %}" style="color: black;"><h1 class="navbar-nav big-font">About</h1></a>
-                    <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">Works</h1></a>
-                    <a href="{% url 'contact' %}" style="color: black;"><div class="navbar-nav" id="navbar-nav5">
-                        <div class="navbar-nav5-back"></div>
-                        <h1 class="navbar-nav2 big-font">Contact</h1>
-                    </div></a>
+                <div class="navbar-burger" id="navbar-burger">
+                    <span class="navbar-span" id="span1"></span>
+                    <span class="navbar-span" id="span2"></span>
+                    <span class="navbar-span" id="span3"></span>
                 </div>
-            </div>
-         </nav>
-
-        <div class="working-part">
-            <div class="service-div">
-                <div class="services service1">
-                    <h1 class="service-rank">🥉 Bronze – Starter Website</h1>
-                    <hr class="service-line">
-
-                    <h1 class="service-suggests">⬤ 1-page responsive website (e.g. landing page or personal portfolio)</h1>
-                    <h1 class="service-suggests">⬤ Mobile-friendly design</h1>
-                    <h1 class="service-suggests">⬤ Basic contact form</h1>
-                    <h1 class="service-suggests">⬤ Simple animations or transitions</h1>
-                    <h1 class="service-suggests">⬤ Hosting setup help (optional)</h1>
+                
+                <div class="navbar-navs" id="navbar-navs">
+                    <div class="navbar-navs2" id="navbar-navs2">
+                        <a href="{% url 'index' %}" style="color: black;"><h1 class="navbar-nav big-font">Home</h1></a>
+                        <a href="{% url 'about' %}" style="color: black;"><h1 class="navbar-nav big-font">About</h1></a>
+                        <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">Works</h1></a>
+                        <a href="{% url 'contact' %}" style="color: black;"><div class="navbar-nav" id="navbar-nav5">
+                            <div class="navbar-nav5-back"></div>
+                            <h1 class="navbar-nav2 big-font">Contact</h1>
+                        </div></a>
+                    </div>
                 </div>
-                <div class="services service2">
-                    <h1 class="service-rank">🥈 Silver – Standard Site or MVP</h1>
-                    <hr class="service-line">
+        </nav>
 
-                    <h1 class="service-suggests">⬤ Up to 7 pages</h1>
-                    <h1 class="service-suggests">⬤ Full responsive design (desktop + tablet + mobile)</h1>
-                    <h1 class="service-suggests">⬤ Dynamic content with JavaScript</h1>
-                    <h1 class="service-suggests">⬤ Contact form with email handling</h1>
-                    <h1 class="service-suggests">⬤ Admin panel</h1>
-                    <h1 class="service-suggests">⬤ SEO basics (meta tags, alt text, clean URLs)</h1>
-                </div>
-                <div class="services service3">
-                    <h1 class="service-rank">🥇 Gold – Full Web App / Advanced Site</h1>
-                    <hr class="service-line">
+        <section class="services-container">
+        <h1 class="services-title">My Services</h1>
+        <p class="services-subtitle">Choose the plan that best fits your needs</p>
 
-                    <h1 class="service-suggests">⬤ Full-stack app (frontend + backend + database)</h1>
-                    <h1 class="service-suggests">⬤ User authentication (signup/login)</h1>
-                    <h1 class="service-suggests">⬤ Dashboard or admin panel</h1>
-                    <h1 class="service-suggests">⬤ REST API integration</h1>
-                    <h1 class="service-suggests">⬤ Database (MongoDB, Firebase, PostgreSQL, etc.)</h1>
-                    <h1 class="service-suggests">⬤ Ongoing support (1–2 weeks)</h1>
-                </div>
+        <div class="services-grid">
+            <!-- Bronze -->
+            <div class="service-card bronze">
+            <h2 class="service-rank">Bronze Plan</h2>
+            <p class="service-price">Starter Website</p>
+            <ul>
+                <li>1-page responsive website</li>
+                <li>Mobile-friendly design</li>
+                <li>Basic contact form</li>
+                <li>Simple animations</li>
+                <li>Hosting setup help</li>
+                <li>Support 1 Month</li>
+            </ul>
             </div>
 
-            <h1 class="rights small-font" style="margin-top: 100px;">© 2025 Saba Dumbadze</h1>
+            <!-- Silver -->
+            <div class="service-card silver">
+            <h2 class="service-rank">Silver Plan</h2>
+            <p class="service-price">Standard Site / MVP</p>
+            <ul>
+                <li>Up to 7 pages</li>
+                <li>Full responsive design</li>
+                <li>Dynamic content with JS</li>
+                <li>Contact form with email handling</li>
+                <li>Admin panel</li>
+                <li>SEO basics</li>
+                <li>Support 1 Month</li>
+            </ul>
+            </div>
+
+            <!-- Gold -->
+            <div class="service-card gold">
+            <h2 class="service-rank">Gold Plan</h2>
+            <p class="service-price">Full Web App</p>
+            <ul>
+                <li>Full-stack app (frontend + backend)</li>
+                <li>User authentication</li>
+                <li>Dashboard / Admin panel</li>
+                <li>REST API integration</li>
+                <li>Database setup (Postgres, Mongo, Firebase)</li>
+                <li>Support 2 Month</li>
+            </ul>
+            </div>
         </div>
+        </section>
 
+        <section class="contact-container">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-subtitle">I'd love to hear from you. Let’s connect!</p>
+
+            <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:anonym.sas@proton.me">anonym.sas@proton.me</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+995579031008">+995 579 03 10 08</a></p>
+                <p><strong>Location:</strong> Batumi, Georgia</p>
+
+                <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190877.56525431856!2d41.48743919926686!3d41.62414517665807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406786304ea2d221%3A0x7a3053a9e12ea967!2sBatumi!5e0!3m2!1sen!2sge!4v1758956793971!5m2!1sen!2sge" 
+                    width="100%" height="200" style="border:0;" 
+                    allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="messageForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+                </form>
+                <p class="form-status" id="formStatus"></p>
+            </div>
+            </div>
+        </section>
+
+        <script src="{% static 'js/contact.js' %}"></script>
         <script src="{% static 'js/navbar.js' %}"></script>
     </body>
 </html>
