@@ -10,14 +10,27 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
 </head>
 <body class="body">
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <h1 class="navbar-title huge-font">Web-Developer</h1>
-        <div class="navbar-navs">
-            <div class="navbar-navs2">
-                <a href="{% url 'index' %}" style="color: black;">Home</a>
-                <a href="#" style="color: black;"><b>About</b></a>
-                <a href="{% url 'works' %}" style="color: black;">Works</a>
-                <a href="{% url 'contact' %}" class="nav-contact">Contact</a>
+
+        <div class="navbar-burger" id="navbar-burger">
+            <span class="navbar-span" id="span1"></span>
+            <span class="navbar-span" id="span2"></span>
+            <span class="navbar-span" id="span3"></span>
+        </div>
+        
+        <div class="navbar-navs" id="navbar-navs">
+            <div class="navbar-navs2" id="navbar-navs2">
+                <a href="{% url 'index' %}" style="color: black;"><h1 class="navbar-nav big-font">Home</h1></a>
+                <a href="" style="color: black;"><div class="navbar-nav" id="navbar-nav1">
+                    <div class="navbar-current-line"></div>
+                    <h1 class="navbar-nav2 big-font">About</h1>
+                </div></a>
+                <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">Works</h1></a>
+                <a href="{% url 'contact' %}" style="color: black;"><div class="navbar-nav" id="navbar-nav5">
+                    <div class="navbar-nav5-back"></div>
+                    <h1 class="navbar-nav2 big-font">Contact</h1>
+                </div></a>
             </div>
         </div>
     </nav>
@@ -71,5 +84,12 @@
             My goal is to help people and small businesses get a professional online presence. I enjoy collaborating on projects where I can learn something new and deliver a final product that someone is proud to show off. If you have an idea for a project, I’d love to help you build it.
         </p>
     </section>
+
+    <footer>
+        <div class="footer-line"></div>
+        <h1 class="rights small-font">© 2026 Saba Dumbadze</h1>
+    </footer>
+
+    <script src="{% static 'js/navbar.js' %}"></script>
 </body>
 </html>
