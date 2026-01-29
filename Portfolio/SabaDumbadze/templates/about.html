@@ -1,121 +1,84 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Saba Dumbadze</title>
-
-        <!-- font link -->
-        <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
-
-        <!-- css link -->
-        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
-    </head>
-    <body class="body">
-        <!-- navbar -->
-         <nav class="navbar" id="navbar">
-            <h1 class="navbar-title huge-font">Web-Developer</h1>
-
-            <div class="navbar-burger" id="navbar-burger">
-                <span class="navbar-span" id="span1"></span>
-                <span class="navbar-span" id="span2"></span>
-                <span class="navbar-span" id="span3"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Dumbadze | About</title>
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
+</head>
+<body class="body">
+    <nav class="navbar" id="navbar">
+        <h1 class="navbar-title huge-font">Web-Developer</h1>
+        <div class="navbar-burger" id="navbar-burger">
+            <span class="navbar-span"></span>
+            <span class="navbar-span"></span>
+            <span class="navbar-span"></span>
+        </div>
+        
+        <div class="navbar-navs" id="navbar-navs">
+            <div class="navbar-navs2">
+                <a href="{% url 'index' %}"><h1 class="navbar-nav big-font">Home</h1></a>
+                <a href="#"><div class="navbar-nav">
+                    <div class="navbar-current-line"></div>
+                    <h1 class="navbar-nav2 big-font">About</h1>
+                </div></a>
+                <a href="{% url 'works' %}"><h1 class="navbar-nav big-font">Works</h1></a>
+                <a href="{% url 'contact' %}"><div class="navbar-nav">
+                    <h1 class="navbar-nav2 big-font">Contact</h1>
+                </div></a>
             </div>
-            
-            <div class="navbar-navs" id="navbar-navs">
-                <div class="navbar-navs2" id="navbar-navs2">
-                    <a href="{% url 'index' %}" style="color: black;"><h1 class="navbar-nav big-font">Home</h1></a>
-                    <a href="" style="color: black;"><div class="navbar-nav" id="navbar-nav1">
-                        <div class="navbar-current-line"></div>
-                        <h1 class="navbar-nav2 big-font">About</h1>
-                    </div></a>
-                    <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">Works</h1></a>
-                    <a href="{% url 'contact' %}" style="color: black;"><div class="navbar-nav" id="navbar-nav5">
-                        <div class="navbar-nav5-back"></div>
-                        <h1 class="navbar-nav2 big-font">Contact</h1>
-                    </div></a>
-                </div>
-            </div>
-         </nav>
+        </div>
+    </nav>
 
-            <div class="a-part1">
-                <h1 class="a-title1">Saba Dumbadze</h1>
-                <h1 class="a-title2">Teen Web Developer</h1>
+    <header class="a-hero">
+        <div class="hero-content">
+            <h1 class="a-title1">Saba Dumbadze</h1>
+            <h2 class="a-title2">Teen Web Developer</h2>
+            <button class="a-button1">Scroll Down</button>
+        </div>
+        <img src="{% static 'srcs/JavaScript.svg' %}" alt="" class="floating-img a-img1">
+        <img src="{% static 'srcs/HTML.svg' %}" alt="" class="floating-img a-img2">
+        <img src="{% static 'srcs/Python.svg' %}" alt="" class="floating-img a-img3">
+    </header>
 
-                <img src="{% static 'srcs/JavaScript.svg' %}" alt="" class="a-img1">
-                <img src="{% static 'srcs/HTML.svg' %}" alt="" class="a-img2">
-                <img src="{% static 'srcs/Python.svg' %}" alt="" class="a-img3">
-                <img src="{% static 'srcs/Rectangle_39.svg' %}" alt="" class="a-img4">
+    <section class="a2-wrapper">
+        <img src="{% static 'srcs/Me.jpg' %}" alt="Saba's photo" class="a2-img1">
+        <div class="a2-text">
+            <h2 class="a2-title1">Hi, I’m Saba — Web Developer</h2>
+            <p class="a2-title2">
+                I’m a web developer with experience in Django, CSS, and JavaScript, focusing on creating websites that are clean, functional, and easy to use. I enjoy turning ideas into working digital solutions that are both practical and visually appealing.
+            </p>
+        </div>
+    </section>
 
-                <button class="a-button1">Scroll Down</button>
-            </div>
+    <section class="skills-section">
+        <div class="skills-content">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-desc">
+                <strong>Backend:</strong> Django, Python <br>
+                <strong>Frontend:</strong> HTML, CSS, JavaScript, Responsive Design <br>
+                <strong>Databases:</strong> PostgreSQL <br>
+                <strong>Tools:</strong> Git, Figma, VS Code
+            </p>
+        </div>
+    </section>
 
-            <div class="a-part2">
-                <div class="a2-wrapper">
-                    <img src="{% static 'srcs/Me.jpg' %}" alt="Saba's photo" class="a2-img1">
-                    
-                    <div class="a2-text">
-                        <h1 class="a2-title1">Hi, I’m Saba — Web Developer</h1>
-                        <p class="a2-title2">
-                            I’m a web developer with experience in Django, CSS, and JavaScript, focusing on creating websites that are clean, functional, and easy to use. My work includes building hotel websites, NGO platforms, online shops, and blogs — each project giving me the chance to apply modern web practices and improve user experience. I enjoy turning ideas into working digital solutions that are both practical and visually appealing, and I’m always looking to grow my skills while helping others bring their projects to life.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section class="work-ethics">
+        <div class="ethics-content">
+            <h2 class="section-title">How I Work</h2>
+            <p class="section-desc">
+                I’m detail-oriented and motivated, focusing on writing clean, organized code and creating intuitive user experiences. I value efficiency, collaboration, and continuous improvement.
+            </p>
+        </div>
+    </section>
 
-            <div class="a-part3">
-                <div class="a3-imgs">
-                    <img src="" class="a3-img1">
-                    <img src="" class="a3-img2">
-                    <img src="" class="a3-img3">
-                </div>
-                <h1 class="a3-title1">Hi I’m Saba, an Experienced Web-Developer!
-                <h1 class="a3-title2">I work with modern web technologies to build functional, user-friendly, and visually appealing websites. My main skills include:
+    <footer>
+        <h1 class="rights small-font">© 2025 Saba Dumbadze</h1>
+    </footer>
 
-Backend: Django, Python
-
-Frontend: HTML, CSS, JavaScript, responsive design
-
-Databases: PostgreSQL, basic database management
-
-Version Control: Familiar with Git for commits, branches, and collaboration
-
-Other Tools: Figma, VS Code, deployment basics
-
-I enjoy learning new technologies and improving my skills with every project I build.</h1></h1>
-            </div>
-
-            <div class="a-part4">
-                <div class="a3-imgs2">
-                    <img src="" class="a3-img4">
-                    <img src="" class="a3-img5">
-                </div>
-                <h1 class="a3-title3">How I Work.
-                <h1 class="a3-title4">I’m a detail-oriented and motivated web developer who enjoys turning ideas into functional websites. I focus on writing clean, organized code and creating intuitive user experiences. I work best when solving problems, learning new techniques, and refining projects until they meet high standards.
-
-I value efficiency, collaboration, and continuous improvement — approaching every project with curiosity, discipline, and a desire to deliver work that looks great and performs well.</h1></h1>
-            
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-
-                <h1 class="rights small-font" style="margin-top: 100px;">© 2025 Saba Dumbadze</h1>
-            </div>
-
-        <script src="{% static 'js/navbar.js' %}"></script>
-    </body>
+    <script src="{% static 'js/navbar.js' %}"></script>
+</body>
 </html>
