@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saba Dumbadze | About</title>
+    <title>About | Saba Dumbadze</title>
     <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
@@ -12,73 +12,70 @@
 <body class="body">
     <nav class="navbar" id="navbar">
         <h1 class="navbar-title huge-font">Web-Developer</h1>
-        <div class="navbar-burger" id="navbar-burger">
-            <span class="navbar-span"></span>
-            <span class="navbar-span"></span>
-            <span class="navbar-span"></span>
-        </div>
-        
-        <div class="navbar-navs" id="navbar-navs">
+        <div class="navbar-navs">
             <div class="navbar-navs2">
-                <a href="{% url 'index' %}"><h1 class="navbar-nav big-font">Home</h1></a>
-                <a href="#"><div class="navbar-nav">
-                    <div class="navbar-current-line"></div>
-                    <h1 class="navbar-nav2 big-font">About</h1>
-                </div></a>
-                <a href="{% url 'works' %}"><h1 class="navbar-nav big-font">Works</h1></a>
-                <a href="{% url 'contact' %}"><div class="navbar-nav">
-                    <h1 class="navbar-nav2 big-font">Contact</h1>
-                </div></a>
+                <a href="{% url 'index' %}" style="color: black;">Home</a>
+                <a href="#" style="color: black;"><b>About</b></a>
+                <a href="{% url 'works' %}" style="color: black;">Works</a>
+                <a href="{% url 'contact' %}" class="nav-contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <header class="a-hero">
         <div class="hero-content">
-            <h1 class="a-title1">Saba Dumbadze</h1>
-            <h2 class="a-title2">Teen Web Developer</h2>
-            <button class="a-button1">Scroll Down</button>
+            <p class="a-sub">Based in Georgia</p>
+            <h1 class="a-title-main">Saba Dumbadze</h1>
+            <h2 class="a-title-sub">Crafting the Digital Future through Minimal Design & Robust Code.</h2>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="line"></div>
+            </div>
         </div>
-        <img src="{% static 'srcs/JavaScript.svg' %}" alt="" class="floating-img a-img1">
-        <img src="{% static 'srcs/HTML.svg' %}" alt="" class="floating-img a-img2">
-        <img src="{% static 'srcs/Python.svg' %}" alt="" class="floating-img a-img3">
     </header>
 
     <section class="a2-wrapper">
-        <img src="{% static 'srcs/Me.jpg' %}" alt="Saba's photo" class="a2-img1">
+        <div class="image-stack">
+            <img src="{% static 'srcs/Me.jpg' %}" alt="Saba" class="a2-img1">
+        </div>
         <div class="a2-text">
-            <h2 class="a2-title1">Hi, I’m Saba — Web Developer</h2>
+            <h2 class="a2-title1">The Journey of a Teen Developer</h2>
             <p class="a2-title2">
-                I’m a web developer with experience in Django, CSS, and JavaScript, focusing on creating websites that are clean, functional, and easy to use. I enjoy turning ideas into working digital solutions that are both practical and visually appealing.
+                My fascination with the digital world began with a simple question: "How does it work?" That curiosity led me to the world of programming, where I discovered that code is more than just logic—it is a tool for creation. As a teen developer, I bring a fresh, modern perspective to every project, blending the energy of youth with the discipline of professional software engineering.
+            </p>
+            <p class="a2-title2">
+                I don’t just build websites; I build experiences. Whether I am architecting a complex backend with Django or perfecting a responsive layout with CSS, my goal remains the same: to create digital environments that are intuitive, accessible, and high-performing. I believe that great software should feel invisible to the user—it should just work, seamlessly and beautifully.
             </p>
         </div>
     </section>
 
-    <section class="skills-section">
-        <div class="skills-content">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-desc">
-                <strong>Backend:</strong> Django, Python <br>
-                <strong>Frontend:</strong> HTML, CSS, JavaScript, Responsive Design <br>
-                <strong>Databases:</strong> PostgreSQL <br>
-                <strong>Tools:</strong> Git, Figma, VS Code
-            </p>
+    <section class="detailed-info">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Technical Philosophy</h3>
+                <p>
+                    I specialize in the Python/Django ecosystem, which allows me to build secure and scalable applications. On the frontend, I focus on "Clean UI" principles—ensuring that every pixel has a purpose. From managing PostgreSQL databases to deploying live applications, I handle the full lifecycle of a project with precision and a focus on long-term maintainability.
+                </p>
+            </div>
+            <div class="info-card">
+                <h3>Collaborative Approach</h3>
+                <p>
+                    Every great project starts with a conversation. I value clear communication and transparency, working closely with clients or teams to translate abstract ideas into functional reality. I use tools like Figma for design prototyping and Git for version control, ensuring a workflow that is organized, professional, and ready for growth.
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="work-ethics">
-        <div class="ethics-content">
-            <h2 class="section-title">How I Work</h2>
-            <p class="section-desc">
-                I’m detail-oriented and motivated, focusing on writing clean, organized code and creating intuitive user experiences. I value efficiency, collaboration, and continuous improvement.
-            </p>
-        </div>
+    <section class="mission-statement">
+        <h2 class="mission-title">Beyond the Code</h2>
+        <p>
+            When I’m not writing code, I’m usually exploring the latest trends in UI/UX design or diving into new backend technologies to stay ahead of the curve. I am driven by the challenge of solving complex problems and the satisfaction of seeing a project go live. My mission is to help brands, NGOs, and businesses establish a digital presence that truly reflects their values and vision.
+        </p>
     </section>
 
     <footer>
-        <h1 class="rights small-font">© 2025 Saba Dumbadze</h1>
+        <div class="footer-line"></div>
+        <p class="rights">© 2026 Saba Dumbadze — All Rights Reserved</p>
     </footer>
-
-    <script src="{% static 'js/navbar.js' %}"></script>
 </body>
 </html>

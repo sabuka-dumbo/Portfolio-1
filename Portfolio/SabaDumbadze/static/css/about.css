@@ -1,111 +1,161 @@
 body {
-    overflow-x: hidden;
-    background-color: white;
-    color: #333;
     margin: 0;
-    font-family: "Itim", sans-serif;
+    padding: 0;
+    background-color: white;
+    color: #1a1a1a;
+    font-family: "Itim", cursive;
+    line-height: 1.6;
 }
 
 .a-hero {
-    position: relative;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: white;
+    padding: 0 5%;
 }
 
-.a-title1 {
-    font-size: 1.5rem;
+.a-sub {
+    font-size: 1.2rem;
+    color: #47D4FF;
+    letter-spacing: 2px;
     margin-bottom: 10px;
-    color: #666;
 }
 
-.a-title2 {
-    font-size: 3.5rem;
-    margin-bottom: 30px;
+.a-title-main {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: bold;
 }
 
-.a-button1 {
-    padding: 12px 30px;
-    background-color: #47D4FF;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.2s;
+.a-title-sub {
+    font-size: 1.8rem;
+    color: #555;
+    max-width: 700px;
+    margin: 20px auto;
+    font-weight: normal;
 }
 
-.a-button1:hover {
-    transform: scale(1.05);
+.scroll-indicator {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
 }
 
-.floating-img {
-    position: absolute;
-    z-index: 0;
-    opacity: 0.8;
+.scroll-indicator .line {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, #47D4FF, transparent);
+    margin-top: 10px;
 }
-
-.a-img1 { top: 15%; left: 5%; width: 120px; }
-.a-img2 { top: 50%; left: 10%; width: 90px; }
-.a-img3 { bottom: 15%; left: 5%; width: 140px; }
 
 .a2-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
-    padding: 100px 5%;
-    max-width: 1100px;
+    gap: 80px;
+    padding: 100px 10%;
+    max-width: 1400px;
     margin: auto;
 }
 
 .a2-img1 {
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    height: 550px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
 }
 
-.a2-text { flex: 1; }
+.a2-img1:hover {
+    filter: grayscale(0%);
+}
 
-.a2-title1 { font-size: 2.5rem; margin-bottom: 20px; }
+.a2-text {
+    flex: 1;
+}
 
-.a2-title2 { font-size: 1.2rem; line-height: 1.8; color: #555; }
+.a2-title1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
 
-.skills-section, .work-ethics {
-    padding: 80px 10%;
-    max-width: 900px;
+.a2-title2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.detailed-info {
+    background-color: #fcfcfc;
+    padding: 100px 10%;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
     margin: auto;
-    text-align: center;
 }
 
-.section-title {
+.info-card h3 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #47D4FF;
-    display: inline-block;
-    padding-bottom: 5px;
+    color: #47D4FF;
+    margin-bottom: 15px;
 }
 
-.section-desc {
+.info-card p {
     font-size: 1.2rem;
-    line-height: 2;
     color: #444;
 }
 
-footer {
-    padding: 50px;
+.mission-statement {
+    padding: 120px 10%;
     text-align: center;
-    border-top: 1px solid #eee;
+    max-width: 800px;
+    margin: auto;
 }
 
-@media (max-width: 768px) {
-    .a-title2 { font-size: 2.5rem; }
-    .a2-wrapper { flex-direction: column; text-align: center; }
-    .a2-img1 { width: 100%; max-width: 300px; }
-    .floating-img { display: none; }
+.mission-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mission-statement p {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+footer {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin-bottom: 30px;
+}
+
+.rights {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .a2-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    .a-title-main {
+        font-size: 3.5rem;
+    }
 }
