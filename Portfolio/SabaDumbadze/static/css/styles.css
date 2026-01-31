@@ -667,6 +667,7 @@
     }
 
     .work-div {
+        display: grid;
         grid-template-columns: 35px calc(100% - 70px) 10px;
     }
 
