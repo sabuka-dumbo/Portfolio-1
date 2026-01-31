@@ -998,6 +998,7 @@
 
     .work-part1 {
         grid-template-columns: 100%;
+        margin-bottom: 10px;
     }
 
     #wd1 {
@@ -1005,6 +1006,7 @@
         grid-row: 1;
         height: max-content;
         aspect-ratio: 1 / 1;
+        margin-bottom: 10px;
     }
 
     #wd2 {
@@ -1012,6 +1014,7 @@
         grid-row: 2;
         height: max-content;
         aspect-ratio: 1 / 1;
+        margin-bottom: 10px;
     }
 
     #wd3 {
@@ -1019,6 +1022,7 @@
         grid-row: 3;
         height: max-content;
         aspect-ratio: 1 / 1;
+        margin-bottom: 10px;
     }
 
     #wd4 {
@@ -1026,6 +1030,7 @@
         grid-row: 4;
         height: max-content;
         aspect-ratio: 1 / 1;
+        margin-bottom: 20px;
     }
 
     #wd5 {
@@ -1033,32 +1038,38 @@
         grid-row: 5;
         height: max-content;
         aspect-ratio: 1 / 1;
+        display: none;
+        margin-bottom: 10px;
     }
 
     #wd6 {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 6;
+        display: none;
         height: max-content;
         aspect-ratio: 1 / 1;
     }
 
     #wd7 {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 7;
+        display: none;
         height: max-content;
         aspect-ratio: 1 / 1;
     }
 
     #wd8 {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 8;
+        display: none;
         height: max-content;
         aspect-ratio: 1 / 1;
     }
 
     #wd9 {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 9;
+        display: none;
         height: max-content;
         aspect-ratio: 1 / 1;
     }
