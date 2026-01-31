@@ -1023,7 +1023,6 @@
     #wd1, #wd2, #wd3, #wd4, #wd5, #wd6, #wd7, #wd8, #wd9 {
         grid-column: 1 !important;
         grid-row: auto !important;
-        height: 80px !important;
     }
     
     .work-part2 {
