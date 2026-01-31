@@ -1031,6 +1031,7 @@
         height: max-content;
         aspect-ratio: 1 / 1;
         margin-bottom: 20px;
+        display: none;
     }
 
     #wd5 {
