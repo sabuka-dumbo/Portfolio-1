@@ -445,6 +445,7 @@
     outline: none;
     aspect-ratio: 1 / 1;
     height: max-content;
+    object-fit: contain;
 }
 
 #wd1 {
