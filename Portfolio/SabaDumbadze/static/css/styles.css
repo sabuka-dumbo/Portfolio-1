@@ -948,3 +948,51 @@
         right: 30px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .strengths-div {
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    #sd1 {
+        grid-column: 2;
+        grid-row: 1;
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
+    #sd2 {
+        grid-column: 2;
+        grid-row: 2;
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
+    #sd3 {
+        grid-column: 2;
+        grid-row: 3;
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
+    #sd4 {
+        grid-column: 2;
+        grid-row: 4;
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
+    #sd5 {
+        grid-column: 2;
+        grid-row: 5;
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
+    #sd6 {
+        grid-column: 2;
+        grid-row: 6;
+        height: max-content;
+        padding-bottom: 10px;
+    }
+}
