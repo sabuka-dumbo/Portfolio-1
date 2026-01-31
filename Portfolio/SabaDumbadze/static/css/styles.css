@@ -153,7 +153,6 @@
     font-family: "Itim";
     overflow: hidden;
     white-space: nowrap;
-    border-right: 3px solid black;
     text-align: center;
 }
 
@@ -166,7 +165,6 @@
 .info-button {
     padding: 10px 20px;
     outline: none;
-    border: 5px solid black;
     background-color: #FFEF63;
     box-sizing: border-box;
     cursor: pointer;
