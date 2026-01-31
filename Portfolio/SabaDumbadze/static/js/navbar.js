@@ -1,44 +1,62 @@
 const navbar = document.getElementById("navbar");
 
 navbar.style.animation = "navbar_animation_open 1.2s ease";
-navbar.addEventListener("animationend", () => {
-    navbar.style.animation = "";
+
+navbar.addEventListener("animationend", function () {
+    navbar.style.animation = '';
 });
 
-const burger = document.getElementById("navbar-burger");
-const navs = document.getElementById("navbar-navs");
-const span1 = document.getElementById("span1");
-const span2 = document.getElementById("span2");
-const span3 = document.getElementById("span3");
+const burger_menu_div = document.getElementById("navbar-burger");
+const navbar_navs2_div = document.getElementById("navbar-navs");
+const burger_span1 = document.getElementById("span1");
+const burger_span2 = document.getElementById("span2");
+const burger_span3 = document.getElementById("span3");
 
+let cooldown2 = true;
 let open = false;
-let cooldown = true;
 
-burger.addEventListener("click", () => {
-    if (!cooldown) return;
-    cooldown = false;
+burger_menu_div.addEventListener("click", function () {
+    if (cooldown2) {
+        cooldown2 = false;
 
-    if (!open) {
-        navs.classList.add("active");
+        if (!open) {
+            navbar_navs2_div.style.display = "block";
+            navbar_navs2_div.style.animation = "navbar_nav2_open 1s ease";
+            burger_span1.style.animation = "span1_open ease 1s";
+            burger_span2.style.animation = "span2_open ease 1s";
+            burger_span3.style.animation = "span3_open ease 1s";
 
-        span1.style.top = "13.5px";
-        span1.style.rotate = "45deg";
-        span2.style.opacity = "0";
-        span3.style.top = "-13.5px";
-        span3.style.rotate = "-45deg";
+            navbar_navs2_div.addEventListener("animationend", function handler() {
+                navbar_navs2_div.removeEventListener("animationend", handler);
+                navbar_navs2_div.style.animation = '';
+                navbar_navs2_div.style.left = "0%";
 
-        open = true;
-    } else {
-        navs.classList.remove("active");
+                burger_span1.style = "top: 13.5px; rotate: 45deg;";
+                burger_span2.style.opacity = "0";
+                burger_span3.style = "top: -13.5px; rotate: -45deg;";
 
-        span1.style.top = "0px";
-        span1.style.rotate = "0deg";
-        span2.style.opacity = "1";
-        span3.style.top = "0px";
-        span3.style.rotate = "0deg";
+                cooldown2 = true;
+                open = true;
+            });
+        } else {
+            navbar_navs2_div.style.animation = "navbar_nav2_close 1s ease";
+            burger_span1.style.animation = "span1_close ease 1s";
+            burger_span2.style.animation = "span2_close ease 1s";
+            burger_span3.style.animation = "span3_close ease 1s";
 
-        open = false;
+            navbar_navs2_div.addEventListener("animationend", function handler() {
+                navbar_navs2_div.removeEventListener("animationend", handler);
+                navbar_navs2_div.style.animation = '';
+                navbar_navs2_div.style.display = "none";
+                navbar_navs2_div.style.left = "";
+
+                burger_span1.style = "top: 0px; rotate: 0deg;";
+                burger_span2.style.opacity = "1";
+                burger_span3.style = "top: 0px; rotate: 0deg;";
+
+                cooldown2 = true;
+                open = false;
+            });
+        }
     }
-
-    setTimeout(() => cooldown = true, 300);
 });
