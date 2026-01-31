@@ -1,240 +1,73 @@
-.scroll-div {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    margin: 0;
-    padding: 0;
+.working-part {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.scroll-title {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
-    font-family: "Itim";
-    font-weight: bold;
+.current-work {
+    border: 2px solid #000;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 8px;
+    background-color: white;
 }
 
-.scroll-button {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: max-content;
-    height: max-content;
-    padding: 0;
-    margin: 0;
-    background: rgba(255, 0, 0, 0);
-    border: none;
-    cursor: pointer;
-}
-
-.scroll-icon {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-}
-
-.w-div1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    padding: 0;
-    margin: 0;
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 40% 5% 55%;
-    grid-template-rows: auto auto auto;
-}
-
-.w-title1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
-    font-family: "Itim";
-    font-weight: bold;
-    color: black;
-    grid-column: 1;
-    grid-row: 1;
-    display: block;
-}
-
-.w-description1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    font-family: "Itim";
-    font-weight: normal;
-    color: black;
-    grid-column: 1;
-    grid-row: 2;
-    display: block;
-}
-
-.w-img1 {
-    position: relative;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 250px;
-    grid-column: 3;
+.status-badge {
     display: inline-block;
-    padding: 0;
-    margin: 0;
-    grid-row: 2;
-    background-color: gainsboro;
+    background: #000;
+    color: #fff;
+    padding: 5px 15px;
+    font-family: "Itim";
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
-.w-video1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    background-color: gainsboro;
-}
-
-.w-pics {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    display: grid;
-    grid-template-columns: 49% 2% 49%;
-    grid-template-rows: auto;
-    row-gap: 6px;
-}
-
-.w-pic {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-color: gainsboro;
-}
-
-.w-pic1 {
+.w-text-content {
     grid-column: 1;
-    grid-row: 1;
 }
 
-.w-pic2 {
-    grid-column: 3;
-    grid-row: 1;
+.github-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333;
+    font-family: "Itim";
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.w-pic3 {
-    grid-column: 1;
-    grid-row: 3;
+.github-link:hover {
+    text-decoration: underline;
+    transform: translateX(5px);
 }
 
-.w-pic4 {
-    grid-column: 3;
-    grid-row: 3;
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.w-pic5 {
-    grid-column: 1;
-    grid-row: 5;
+.progress-bar {
+    height: 100%;
+    background: #000;
+    border-radius: 5px;
 }
 
-.w-pic6 {
-    grid-column: 3;
-    grid-row: 5;
+.animate-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
 }
 
-@media screen and (max-width: 575px) {
-    .w-div1 {
-        grid-template-columns: auto;
-        grid-template-rows: auto 10px auto 10px auto;
-    }
-
-    .w-title1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .w-description1 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .w-img1 {
-        grid-column: 1;
-        grid-row: 5;
-        top: 0;
-    }
+.animate-fade.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-@media screen and (max-width: 450px) {
-    .w-pics {
-        grid-template-columns: auto;
-        grid-template-rows: auto 10px auto 10px auto 10px auto 10px auto 10px auto;
-    }
-
-    .w-pic1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .w-pic2 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .w-pic3 {
-        grid-column: 1;
-        grid-row: 5;
-    }
-
-    .w-pic4 {
-        grid-column: 1;
-        grid-row: 7;
-    }
-
-    .w-pic5 {
-        grid-column: 1;
-        grid-row: 9;
-    }
-
-    .w-pic6 {
-        grid-column: 1;
-        grid-row: 11;
-    }
-
-    .w-video1 {
-        margin-top: 10px;
-    }
-    
-    .scroll-title {
-        font-size: 30px;
-    }
-
-    .scroll-icon {
-        top: 5px;
-        width: 25px;
-        height: 25px;
-    }
+.project-card {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
 }
