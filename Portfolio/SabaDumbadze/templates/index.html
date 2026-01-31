@@ -5,19 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Saba Dumbadze</title>
-
-        <!-- font link -->
         <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
-
-        <!-- css link -->
         <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
     </head>
     <body class="body">
-        <!-- navbar -->
          <nav class="navbar" id="navbar">
             <h1 class="navbar-title huge-font">Web-Developer</h1>
 
-            <div class="navbar-burger" id="navbar-burger">
+            <div class="navbar-burger" id="navbar-burger" onclick="toggleMenu()">
                 <span class="navbar-span" id="span1"></span>
                 <span class="navbar-span" id="span2"></span>
                 <span class="navbar-span" id="span3"></span>
@@ -25,16 +20,20 @@
             
             <div class="navbar-navs" id="navbar-navs">
                 <div class="navbar-navs2" id="navbar-navs2">
-                    <a href="" style="color: black;"><div class="navbar-nav" id="navbar-nav1">
-                        <div class="navbar-current-line"></div>
-                        <h1 class="navbar-nav2 big-font">Home</h1>
-                    </div></a>
-                    <a href="{% url 'about' %}" style="color: black;"><h1 class="navbar-nav big-font">About</h1></a>
-                    <a href="{% url 'works' %}" style="color: black;"><h1 class="navbar-nav big-font">Works</h1></a>
-                    <a href="{% url 'contact' %}" style="color: black;"><div class="navbar-nav" id="navbar-nav5">
-                        <div class="navbar-nav5-back"></div>
-                        <h1 class="navbar-nav2 big-font">Contact</h1>
-                    </div></a>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <div class="navbar-nav" id="navbar-nav1">
+                            <div class="navbar-current-line"></div>
+                            <h1 class="navbar-nav2 big-font">Home</h1>
+                        </div>
+                    </a>
+                    <a href="{% url 'about' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">About</h1></a>
+                    <a href="{% url 'works' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">Works</h1></a>
+                    <a href="{% url 'contact' %}" style="color: black; text-decoration: none;">
+                        <div class="navbar-nav" id="navbar-nav5">
+                            <div class="navbar-nav5-back"></div>
+                            <h1 class="navbar-nav2 big-font">Contact</h1>
+                        </div>
+                    </a>
                 </div>
             </div>
          </nav>
@@ -45,85 +44,79 @@
                     <h1 class="info-title" id="typing-text1">Hi I’m Saba Dumbadze,</h1>
                     <h1 class="info-title" id="typing-text2">an experienced Web-Developer.</h1>
                     <h1 class="info-description medium-font">Saba Dumbadze is a skilled and innovative web developer with a strong foundation in modern web technologies, including Django, CSS, and JavaScript. As a developer, Saba is dedicated to crafting high-quality, visually appealing, and user-friendly websites that help individuals and businesses stand out in the digital landscape.</h1>
-                    <a href="{% url 'about' %}" style="text-decoration: none;"><button class="info-button medium-font" id="info-button">See what I can do for you</button>
-                    <button class="info-button medium-font" id="info-button2">See what I can do for you</button></a>
+                    <a href="{% url 'about' %}" style="text-decoration: none; width: 100%; display: flex; justify-content: center;">
+                        <button class="info-button medium-font" id="info-button">See what I can do for you</button>
+                    </a>
                 </div>
-
                 <img src="{% static 'srcs/Me.jpg' %}" class="info-img">
             </div>
 
             <div class="strengths-div">
-                <h1 class="strengths-title huge-font">Strengths</h1>
-                <h1 class="strengths-small-title medium-font">Skills in web-development</h1>
-                <hr class="strengths-line">
+                <div class="strengths-header-container">
+                    <h1 class="strengths-title huge-font">Strengths</h1>
+                    <h1 class="strengths-small-title medium-font">Skills in web-development</h1>
+                    <hr class="strengths-line">
+                </div>
 
                 <div class="strength-divs" id="sd1">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon1.svg' %}">
                     <h1 class="strength-div-title medium-font">Git Version Control</h1>
-                    <h1 class="strength-div-description small-font">Familiar with Git version control for basic collaboration, branching, and tracking changes.  
-                    Able to handle commits, push/pull, and simple merges with growing confidence.</h1>
+                    <h1 class="strength-div-description small-font">Familiar with Git version control for basic collaboration, branching, and tracking changes. Able to handle commits, push/pull, and simple merges with growing confidence.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd2">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon2.svg' %}">
                     <h1 class="strength-div-title medium-font">App Design</h1>
-                    <h1 class="strength-div-description small-font">Experienced in app design, focusing on creating intuitive user interfaces and seamless user experiences. Proficient in wireframing, prototyping, and implementing design principles to enhance functionality and aesthetics.</h1>
+                    <h1 class="strength-div-description small-font">Experienced in app design, focusing on creating intuitive user interfaces and seamless user experiences. Proficient in wireframing, prototyping, and implementing design principles.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd3">
-                    <img class="strength-div-icon" src="{% static 'srcs/Icon3.svg' %}">
-                    <img class="strength-div-icon" src="{% static 'srcs/Icon3.svg' %}" style="position: absolute; width: 55px; height: 55px; left: -15px; top: -10px;">
+                    <div style="position: relative;">
+                        <img class="strength-div-icon" src="{% static 'srcs/Icon3.svg' %}">
+                    </div>
                     <h1 class="strength-div-title medium-font">Math & Logic</h1>
-                    <h1 class="strength-div-description small-font">Strong foundation in mathematics and logical reasoning, enabling effective problem-solving and analytical thinking. Skilled in applying mathematical concepts to optimize algorithms and develop efficient solutions.</h1>
+                    <h1 class="strength-div-description small-font">Strong foundation in mathematics and logical reasoning, enabling effective problem-solving and analytical thinking.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd4">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon4.svg' %}">
                     <h1 class="strength-div-title medium-font">Web-Development</h1>
-                    <h1 class="strength-div-description small-font">Experienced in web development, specializing in creating responsive and user-friendly websites. Proficient in front-end and back-end technologies, ensuring seamless functionality and visually appealing designs.</h1>
+                    <h1 class="strength-div-description small-font">Experienced in web development, specializing in creating responsive and user-friendly websites. Proficient in front-end and back-end technologies.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd5">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon5.svg' %}">
                     <h1 class="strength-div-title medium-font">Post-Project Support</h1>
-                    <h1 class="strength-div-description small-font">Committed to providing ongoing support and maintenance even after project completion, ensuring long-term functionality and addressing any issues promptly.</h1>
+                    <h1 class="strength-div-description small-font">Committed to providing ongoing support and maintenance even after project completion, ensuring long-term functionality.</h1>
                 </div>
                 
                 <div class="strength-divs" id="sd6">
                     <img class="strength-div-icon" src="{% static 'srcs/Icon6.svg' %}">
                     <h1 class="strength-div-title medium-font">Creative Thinking</h1>
-                    <h1 class="strength-div-description small-font">Strong ability to think creatively and approach problems from innovative angles, developing unique solutions and enhancing project outcomes.</h1>
+                    <h1 class="strength-div-description small-font">Strong ability to think creatively and approach problems from innovative angles, developing unique solutions.</h1>
                 </div>
             </div>
 
             <div class="work-div">
                 <div class="work-part1">
                     <img src="" class="work-img" id="wd1">
-                    
                     <img src="" class="work-img" id="wd2">
-                    
                     <img src="" class="work-img" id="wd3">
-                    
                     <img src="" class="work-img" id="wd4">
-                    
                     <img src="" class="work-img" id="wd5">
-                    
                     <img src="" class="work-img" id="wd6">
-                    
                     <img src="" class="work-img" id="wd7">
-                    
                     <img src="" class="work-img" id="wd8">
-                    
                     <img src="" class="work-img" id="wd9">
                 </div>
 
                 <div class="work-part2">
                     <h1 class="work-title huge-font">My Work</h1>
-                    <h1 class="work-description small-font">I specialize in building clean, modern, and functional websites tailored to different needs and industries. My experience includes developing a Hotel Website with booking features, a Non-Governmental Organization (NGO) website focused on clear communication and community engagement, an Online Shop with smooth shopping and checkout flows, and a Blog platform designed for easy content creation and sharing. Each project has helped me refine my skills in creating user-friendly digital solutions that balance design and functionality.</h1>
+                    <h1 class="work-description small-font">I specialize in building clean, modern, and functional websites tailored to different needs and industries. My experience includes developing a Hotel Website with booking features, a Non-Governmental Organization (NGO) website, an Online Shop, and a Blog platform.</h1>
 
                     <div class="work-buttons">
-                        <a href="{% url 'works' %}"><button class="work-button1 medium-font">See more</button></a>
-                        <a href="{% url 'contact' %}"><button class="work-button2 medium-font">Contact now</button></a>
+                        <a href="{% url 'works' %}" style="width: 48%;"><button class="work-button1 medium-font" style="width: 100%;">See more</button></a>
+                        <a href="{% url 'contact' %}" style="width: 48%;"><button class="work-button2 medium-font" style="width: 100%;">Contact now</button></a>
                     </div>
                 </div>
             </div>
@@ -131,6 +124,12 @@
              <h1 class="rights small-font">© 2025 Saba Dumbadze</h1>
          </div>
 
+        <script>
+            function toggleMenu() {
+                const nav = document.getElementById('navbar-navs');
+                nav.classList.toggle('active');
+            }
+        </script>
         <script src="{% static 'js/index.js' %}"></script>
     </body>
 </html>

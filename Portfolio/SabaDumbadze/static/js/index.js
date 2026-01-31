@@ -42,24 +42,6 @@ info_button.addEventListener("mouseleave", function() {
     }
 })
 
-const typing_text1 = document.getElementById("typing-text1");
-const typing_text2 = document.getElementById("typing-text2");
-
-addEventListener("DOMContentLoaded", function() {
-    typing_text1.style.animation = "typing_animation 2s steps(30) 01s 1 normal both";
-    typing_text2.style.opacity = '0';
-    
-    this.setTimeout(function() {
-        typing_text1.style.borderRight = 'none';
-        typing_text2.style.opacity = '1';
-        typing_text2.style.animation = "typing_animation 2s steps(30) 1s 1 normal both";
-
-        typing_text2.addEventListener("animationend", function() {
-            typing_text2.style.animation = "blink_animation 1.25s step-end infinite 1s";
-        })
-    }, 2500)
-})
-
 document.getElementById("sd1").addEventListener("mouseenter", function() {
     const current_card = document.getElementById("sd1");
     current_card.style.animation = "card_hover_animation_open ease 0.4s";
