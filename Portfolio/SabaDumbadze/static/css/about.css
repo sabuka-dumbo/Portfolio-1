@@ -142,3 +142,13 @@ footer {
     .a2-img1 { width: 100%; max-width: 320px; height: auto; }
     .info-grid { grid-template-columns: 1fr; }
 }
+
+@keyframes navbar1_animation_hover {
+    0% { background-color: #F68368; }
+    100% { background-color: #c1543c; }
+}
+
+@keyframes navbar5_animation_hover {
+    0% { background-color: #FFEF63; }
+    100% { background-color: #cdc04d; }
+}
