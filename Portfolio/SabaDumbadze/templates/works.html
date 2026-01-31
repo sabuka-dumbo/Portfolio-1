@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/works.css' %}" />
 </head>
-<body class="body" style="background-color: white;">
+<body class="body" style="background-color: white; margin: 0; padding: 0;">
+    
     <nav class="navbar" id="navbar">
         <h1 class="navbar-title huge-font">Web-Developer</h1>
         <div class="navbar-burger" id="navbar-burger">
@@ -20,65 +21,60 @@
         
         <div class="navbar-navs" id="navbar-navs">
             <div class="navbar-navs2" id="navbar-navs2">
-                <a href="{% url 'index' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">Home</h1></a>
-                <a href="{% url 'about' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">About</h1></a>
-                <a href="{% url 'works' %}" style="color: black; text-decoration: none;">
-                    <div class="navbar-nav" id="navbar-nav1">
-                        <div class="navbar-current-line"></div>
-                        <h1 class="navbar-nav2 big-font">Works</h1>
-                    </div>
-                </a>
-                <a href="{% url 'contact' %}" style="color: black; text-decoration: none;">
-                    <div class="navbar-nav" id="navbar-nav5">
-                        <div class="navbar-nav5-back"></div>
-                        <h1 class="navbar-nav2 big-font">Contact</h1>
-                    </div>
-                </a>
+                <a href="{% url 'index' %}" class="nav-link">Home</a>
+                <a href="{% url 'about' %}" class="nav-link">About</a>
+                <a href="{% url 'works' %}" class="nav-link active-nav">Works</a>
+                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="working-part">
-        <div class="scroll-div animate-fade">
-            <h1 class="scroll-title">My Projects</h1>
-        </div>
+    <main class="working-part">
+        <header class="section-header animate-up">
+            <h1 class="scroll-title">Selected Works</h1>
+            <div class="line-separator"></div>
+        </header>
 
-        <section class="current-work animate-fade">
-            <div class="status-badge">WORKING ON NOW</div>
-            <div class="w-div1">
-                <div class="w-text-content">
-                    <h2 class="w-title1">Next-Gen E-commerce</h2>
-                    <p class="w-description1">Building a high-performance marketplace using React and Django REST Framework.</p>
+        <section class="current-project animate-up">
+            <div class="badge">NOW DEVELOPING</div>
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="w-title1">NextGen Portal</h2>
+                    <p class="w-description1">Exploring advanced UI patterns and micro-interactions in a modern dashboard environment.</p>
                 </div>
-                <div class="w-media-content">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 65%;"></div>
-                    </div>
-                    <p class="small-font">Completion: 65%</p>
+                <div class="progress-box">
+                    <div class="progress-bar-bg"><div class="progress-fill" style="width: 75%;"></div></div>
+                    <span class="small-font">75% Complete</span>
                 </div>
             </div>
         </section>
 
-        <div class="projects-grid">
-            <div class="project-card animate-fade">
-                <div class="w-div1">
-                    <div class="w-text-content">
-                        <h2 class="w-title1">Project One</h2>
-                        <p class="w-description1">A full-stack application with real-time updates.</p>
-                        <a href="#" class="github-link">View on GitHub →</a>
+        <div class="projects-container">
+            <div class="project-item animate-up">
+                <div class="project-main-grid">
+                    <div class="project-text">
+                        <span class="project-num">01</span>
+                        <h2 class="w-title1">Project Alpha</h2>
+                        <p class="w-description1">High-performance web application focused on data visualization and user experience.</p>
+                        <a href="#" class="github-btn">View Code →</a>
                     </div>
-                    <video src="{% static 'videos/video1.mp4' %}" class="w-img1" controls></video>
+                    <div class="project-video-wrapper">
+                        <video src="{% static 'videos/video1.mp4' %}" class="w-video-main" controls muted loop></video>
+                    </div>
                 </div>
-                <div class="w-pics">
-                    <img src="{% static 'images/p1-1.jpg' %}" alt="" class="w-pic">
-                    <img src="{% static 'images/p1-2.jpg' %}" alt="" class="w-pic">
+                <div class="project-gallery">
+                    <img src="{% static 'images/pic1.jpg' %}" class="w-gallery-img" alt="Work 1">
+                    <img src="{% static 'images/pic2.jpg' %}" class="w-gallery-img" alt="Work 2">
+                    <img src="{% static 'images/pic3.jpg' %}" class="w-gallery-img" alt="Work 3">
                 </div>
             </div>
-            
+
         </div>
 
-        <h1 class="rights small-font">© 2026 Saba Dumbadze</h1>
-    </div>
+        <footer class="rights-footer">
+            <p class="rights small-font">© 2026 Saba Dumbadze</p>
+        </footer>
+    </main>
 
     <script src="{% static 'js/navbar.js' %}"></script>
     <script src="{% static 'js/works.js' %}"></script>
