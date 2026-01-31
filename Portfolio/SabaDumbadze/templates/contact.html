@@ -1,22 +1,20 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Contact Me</title>
+        <title>კონტაქტი | საბა დუმბაძე</title>
         
-        <!-- Google Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
         <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     </head>
     <body>
         <nav class="navbar" id="navbar">
-            <h1 class="navbar-title huge-font">Web-Developer</h1>
+            <h1 class="navbar-title huge-font">ვებ-დეველოპერი</h1>
 
             <div class="navbar-burger" id="navbar-burger">
                 <span class="navbar-span" id="span1"></span>
@@ -26,46 +24,44 @@
             
             <div class="navbar-navs" id="navbar-navs">
                 <div class="navbar-navs2" id="navbar-navs2">
-                    <a href="{% url 'index' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">Home</h1></a>
-                    <a href="{% url 'about' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">About</h1></a>
-                    <a href="{% url 'works' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">Works</h1></a>
-                    <a href="{% url 'contact' %}" style="color: black; text-decoration: none;"><div class="navbar-nav" id="navbar-nav5">
+                    <a href="{% url 'index' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">მთავარი</h1></a>
+                    <a href="{% url 'about' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">ჩემზე</h1></a>
+                    <a href="{% url 'works' %}" style="color: black; text-decoration: none;"><h1 class="navbar-nav big-font">ნამუშევრები</h1></a>
+                    <a href="{% url 'contact' %}" style="color: black; text-decoration: none;"><div class="navbar-nav" id="navbar-nav1">
                         <div class="navbar-nav5-back"></div>
-                        <h1 class="navbar-nav2 big-font">Contact</h1>
+                        <h1 class="navbar-nav2 big-font">კონტაქტი</h1>
                     </div></a>
                 </div>
             </div>
         </nav>
 
         <section class="contact-container" style="margin-top: 150px;">
-            <h1 class="contact-title">Get in Touch</h1>
-            <p class="contact-subtitle">I'd love to hear from you. Let’s connect!</p>
+            <h1 class="contact-title">დამიკავშირდით</h1>
+            <p class="contact-subtitle">მოხარული ვიქნები, თუ მომწერთ. მოდით, ვითანამშრომლოთ!</p>
 
             <div class="contact-grid">
-            <!-- Contact Info -->
             <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong> <a href="mailto:anonym.sas@proton.me">anonym.sas@proton.me</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+995579031008">+995 579 03 10 08</a></p>
-                <p><strong>Location:</strong> Batumi, Georgia</p>
+                <h2>საკონტაქტო ინფორმაცია</h2>
+                <p><strong>ელ-ფოსტა:</strong> <a href="mailto:anonym.sas@proton.me">anonym.sas@proton.me</a></p>
+                <p><strong>ტელეფონი:</strong> <a href="tel:+995579031008">+995 579 03 10 08</a></p>
+                <p><strong>მდებარეობა:</strong> ბათუმი, საქართველო</p>
 
                 <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190877.56525431856!2d41.48743919926686!3d41.62414517665807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406786304ea2d221%3A0x7a3053a9e12ea967!2sBatumi!5e0!3m2!1sen!2sge!4v1758956793971!5m2!1sen!2sge" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47644.02024564887!2d41.60333799638104!3d41.641620937666494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406786304fdb07a1%3A0x9d6050730d101c2d!2sBatumi!5e0!3m2!1sen!2sge!4v1700000000000" 
                     width="100%" height="200" style="border:0;" 
                     allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
 
-            <!-- Contact Form -->
             <div class="contact-form">
-                <h2>Send a Message</h2>
+                <h2>მომწერეთ შეტყობინება</h2>
                 <form id="messageForm">
                     {% csrf_token %}
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send</button>
+                    <input type="text" name="name" placeholder="თქვენი სახელი" required>
+                    <input type="email" name="email" placeholder="თქვენი ელ-ფოსტა" required>
+                    <textarea name="message" placeholder="თქვენი შეტყობინება" rows="5" required></textarea>
+                    <button type="submit">გაგზავნა</button>
                 </form>
                 <p class="form-status" id="formStatus"></p>
             </div>
